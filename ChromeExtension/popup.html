@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Product Reviews Analyzer</title>
+  <link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+
+<body>
+  <div id="product-info">
+    <img id="product-image" src="">
+    <h2 id="product-name"></h2>
+  </div>
+  <p id="errorMessage" style="display: none;">
+    <img src="icons/exclamation.png" style="width: 12px;"> I cannot analyze this URL.
+    </br>
+    <img src="icons/hint.png" style="width: 12px;"> It must be a product page of amazon.com website.
+  </p>
+
+  <button id="analyze-button">Analyze</button>
+  <div id="analysis-result">
+    <p><strong>Best Feature:</strong> <span id="best-feature"></span></p>
+    <p><strong>Worst Feature:</strong> <span id="worst-feature"></span></p>
+  </div>
+  <script type="module" src="popup.js"></script>
+</body>
+
+</html>

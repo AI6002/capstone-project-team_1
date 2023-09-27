@@ -1,0 +1,30 @@
+body {
+  width: 250px;
+}
+
+#product-info {
+  text-align: center;
+}
+
+#product-image {
+  max-width: 40%;
+  height: auto;
+  float: left;
+}
+
+#product-name {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#analyze-button {
+  width: 100%;
+  margin-top: 10px;
+}
+
+#analysis-result {
+  display: none;
+  margin-top: 10px;
+}
