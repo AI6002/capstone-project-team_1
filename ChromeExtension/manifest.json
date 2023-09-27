@@ -1,0 +1,30 @@
+{
+    "manifest_version": 3,
+    "name": "Product Analyzer",
+    "version": "1.0",
+    "description": "Analyze products on Amazon",
+    "permissions": ["activeTab", "webNavigation","tabs","scripting","storage"],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icons/red.png",
+        "48": "icons/red.png",
+        "128": "icons/red.png"
+      }
+    },
+    "background": {
+      "service_worker": "background.js",
+      "type": "module"
+    },
+    "icons": {
+      "16": "icons/red.png",
+      "48": "icons/red.png",
+      "128": "icons/red.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://*.amazon.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
