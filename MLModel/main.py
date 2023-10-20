@@ -1,4 +1,4 @@
-from preprocessing import Preprocess
+from utils import extract_sentences
 from aspect_extraction import AspectExtractor
 from sentiment_analysis import SentimentAnalyzer
 import pandas as pd
@@ -6,37 +6,41 @@ import pandas as pd
 
 def review_analysis(df):
     """
-    Analyses the opinions toward the product.
+    Analyze the opinions toward the product based on a DataFrame of reviews.
 
     Args:
-        df: A Pandas DataFrame containing the reviews.
+        df (pandas.DataFrame): A DataFrame containing the reviews in a 'Review' column.
 
     Returns:
-        A Pandas DataFrame containing the preprocessed reviews.
+        pandas.DataFrame: A DataFrame containing the preprocessed reviews.
     """
 
-    review = Preprocess(df)
-    preprocessed_data = review.preprocess_data()
+    # review = Preprocess(df)
+    # preprocessed_data = review.preprocess_data()
 
     # TODO: Aspect extraction
 
     # TODO: Sentiment Analysis
 
-    return preprocessed_data
+    pass
 
 
 if __name__ == "__main__":
 
     reviews = []  # Initialize with an empty list
-
+    input_file_path = './MLModel/data/scraped_data.txt'
+    output_file_path = './MLModel/data/review_sentences.txt'
     # Read data from the text file (each line is treated as a separate entry)
     try:
-        with open('./MLModel/data/ScrapedData.txt', 'r', encoding='utf-8') as file:
-            reviews = file.readlines()
+        with open(input_file_path, 'r', encoding='utf-8') as input_file:
+            extract_sentences(input_file_path, output_file_path)
     except FileNotFoundError:
         print("The input file does not exist.")
     except IOError as e:
         print(f"An error occurred while reading the input file: {str(e)}")
+
+    with open(output_file_path, 'r', encoding='utf-8') as file:
+        reviews = file.readlines()
 
     if reviews:
         # Create a DataFrame from the reviews
