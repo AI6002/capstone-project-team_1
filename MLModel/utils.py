@@ -18,7 +18,7 @@ def extract_sentences(input_file_path, output_file_path):
     nltk.download('punkt')
 
     # Open the input and output files
-    with open(input_file_path, 'r') as input_file, open(output_file_path, 'w') as output_file:
+    with open(input_file_path, 'r', encoding='utf-8') as input_file, open(output_file_path, 'w', encoding='utf-8') as output_file:
         # Read the content of the input file
         input_text = input_file.read()
 
@@ -28,6 +28,6 @@ def extract_sentences(input_file_path, output_file_path):
         # Write each sentence to the output file on a new line
         for sentence in sentences:
             output_file.write(sentence + '\n')
-            
+
     # Notify that the operation is complete
     print("Sentences have been extracted to", output_file_path)
