@@ -32,8 +32,7 @@ if __name__ == "__main__":
     output_file_path = './MLModel/data/review_sentences.txt'
     # Read data from the text file (each line is treated as a separate entry)
     try:
-        with open(input_file_path, 'r', encoding='utf-8') as input_file:
-            extract_sentences(input_file_path, output_file_path)
+        extract_sentences(input_file_path, output_file_path)
     except FileNotFoundError:
         print("The input file does not exist.")
     except IOError as e:
