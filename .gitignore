@@ -131,6 +131,9 @@ venv.bak/
 # Other folders
 node_modules/
 
+# Other files
+scraped_data.txt
+
 # Spyder project settings
 .spyderproject
 .spyproject

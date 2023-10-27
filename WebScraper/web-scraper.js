@@ -1,5 +1,6 @@
 const url = 'https://www.amazon.com/Sennheiser-Open-Back-Professional-Headphone/dp/B00004SY4H'
 const puppeteer = require('puppeteer');
+const fs = require('fs'); // Import the file system module
 const numOfReviews = 10;
 let reviewCount = 2;
 (async () => {
@@ -8,6 +9,8 @@ let reviewCount = 2;
 
   // Create a new page
   const page = await browser.newPage();
+
+  const scrapedData = []; // Create an array to store scraped data
 
   async function scrapePage() {
 
@@ -26,7 +29,7 @@ let reviewCount = 2;
         if (reviewBody) {
           const translatedContent = reviewBody.querySelector('span.cr-translated-review-content');
           content = translatedContent ? translatedContent.textContent : reviewBody.textContent;
-          content = content.replace(/\n/g, ' ').trim();
+          content = content.replace(/\n/g, ' ').trim("\"");
         }
 
         return content;
@@ -34,6 +37,9 @@ let reviewCount = 2;
     });
 
     console.log(reviews);
+    // Append the reviews to our reviews array
+    scrapedData.push(...reviews);
+
 
     // Check for pagination
     const pagination = await page.$('ul.a-pagination');
@@ -74,7 +80,18 @@ let reviewCount = 2;
   // Start scraping
   await scrapePage();
 
+
   // Close the browser
   await browser.close();
+
+   // Save the scraped data to a text file
+   fs.writeFileSync('scraped_data.txt', scrapedData.join('\n'), 'utf-8', (err) => {
+    if (err) {
+      console.error('Error writing to file:', err);
+    } 
+  });
+
+  console.log('Scraped data saved to scraped_data.txt');
+
 })();
 
