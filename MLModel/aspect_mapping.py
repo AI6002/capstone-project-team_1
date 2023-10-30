@@ -39,7 +39,7 @@ synonym_words = [
     ("resolution", "display"),
     ("versatile", "range of features"),
     ("port", "range of features"),
-    ("range of features", "range of features"),
+    ("feature", "range of features"),
     ("design", "design"),
     ("style", "design"),
     ("sleek", "design"),
@@ -77,8 +77,8 @@ synonym_words = [
     ("space", "size"),
     ("slippery", "phone grip"),
     ("grip", "phone grip")
-    # Add more synonym pairs as needed
 ]
+
 
 # Define the TrieNode class to store words in the mapping attribute
 class TrieNode:
@@ -86,20 +86,36 @@ class TrieNode:
         self.children = {}  # Dictionary to store child nodes
         self.mapping = set()  # Use a set to store multiple words with the same mapping
 
-# Function to insert words into the Trie
-def insert_words(trie, words, mapping):
-    for word in words:
-        node = trie.root
+
+class Trie:
+    def __init__(self):
+        self.root = TrieNode()
+
+    # Function to insert words into the Trie
+    def insert(self, words, mapping):
+        for word in words:
+            node = self.root
+            for char in word:
+                if char not in node.children:
+                    node.children[char] = TrieNode()
+                node = node.children[char]
+            node.mapping.add(mapping)
+
+    def search(self, word):
+        node = self.root
         for char in word:
-            if char not in node.children:
-                node.children[char] = TrieNode()
-            node = node.children[char]
-        node.mapping.add(mapping)
+            if char in node.children:
+                node = node.children[char]
+            else:
+                return None  # Word not found in the Trie
+        return node.mapping
+
 
 # Insert your synonym words into the Trie
 word_trie = Trie()
 for word, mapping in synonym_words:
-    insert_words(word_trie, [word], mapping)  # Use a list to store the words
+    word_trie.insert(word, mapping)
+
 
 reviews = [
     (['camera', 'performance', 'battery life'], ['Positive', 'Positive', 'Negative']),
@@ -117,24 +133,28 @@ reviews = [
 # Initialize an empty list to store the mapped data
 mapped_reviews = []
 
+
 # Function to find the closest word in the Trie using Levenshtein distance
-def find_closest_word(word, word_trie):
+def find_closest_word(word, synonym_list):
     closest_word = None
     min_distance = float('inf')
-    for stored_word in word_trie.root.mapping:  # Iterate through the words in the Trie
+    for stored_word, _ in synonym_list:     # Iterate through the words in the Trie
         distance = Levenshtein.distance(word, stored_word)
         if distance < min_distance:
             closest_word = stored_word
             min_distance = distance
     return closest_word
 
+
 # Iterate through the reviews and map aspects and sentiments
 for aspect_list, sentiment_list in reviews:
     mapped_aspects = []
     for aspect in aspect_list:
-        mapping = word_trie.search(aspect)  # Check if the word exists in the Trie
-        if mapping is None:
-            closest_word = find_closest_word(aspect, word_trie)
-            if closest_word:
-                mapping = word_trie.search(closest_word)
-        mapped_aspects.append(mapping.pop() if mapping else aspect
+        closest_word = find_closest_word(aspect, synonym_words)
+        mapping = [mapping for word, mapping in synonym_words if word == closest_word]
+        mapped_aspects.append(mapping[0] if mapping else aspect)
+
+    mapped_sentiments = sentiment_list
+    mapped_reviews.append((mapped_aspects, mapped_sentiments))
+
+print(mapped_reviews)
