@@ -132,7 +132,7 @@ venv.bak/
 node_modules/
 
 # Other files
-scraped_data.txt
+WebScraper/scraped_data.txt
 
 # Spyder project settings
 .spyderproject
