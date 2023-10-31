@@ -1,29 +1,53 @@
-# Function to group reviews by aspect and sentiment
 def group_reviews(reviews):
-    aspect_sentiments = {}
+    """
+    Group reviews by aspect and sentiment.
+
+    Args:
+        reviews (list of tuple): List of reviews where each review is a tuple of aspects and sentiments.
+
+    Returns:
+        dict: A dictionary where each aspect is associated with sentiment counts.
+    """
+    aspect_sentiment_counts = {}
 
     for aspects, sentiments in reviews:
         for aspect, sentiment in zip(aspects, sentiments):
-            if aspect not in aspect_sentiments:
-                aspect_sentiments[aspect] = {'Positive': 0, 'Neutral': 0, 'Negative': 0}
-            aspect_sentiments[aspect][sentiment] += 1
+            if aspect not in aspect_sentiment_counts:
+                aspect_sentiment_counts[aspect] = {'Positive': 0, 'Neutral': 0, 'Negative': 0}
+            aspect_sentiment_counts[aspect][sentiment] += 1
 
-    return aspect_sentiments
+    return aspect_sentiment_counts
 
 
-# Function to calculate aspect sentiment scores
-def calculate_aspect_scores(aspect_sentiments):
+def calculate_aspect_scores(aspect_sentiment_counts):
+    """
+    Calculate aspect sentiment scores.
+
+    Args:
+        aspect_sentiment_counts (dict): Aspect sentiment counts.
+
+    Returns:
+        dict: A dictionary where each aspect is associated with a sentiment score.
+    """
     aspect_scores = {}
 
-    for aspect, sentiment_counts in aspect_sentiments.items():
+    for aspect, sentiment_counts in aspect_sentiment_counts.items():
         score = sentiment_counts['Positive'] - sentiment_counts['Negative']
         aspect_scores[aspect] = score
 
     return aspect_scores
 
 
-# Function to find best and worst features
 def find_best_and_worst_features(aspect_scores):
+    """
+    Find the best and worst features based on aspect scores.
+
+    Args:
+        aspect_scores (dict): Aspect sentiment scores.
+
+    Returns:
+        list, list: Lists of best and worst features.
+    """
     best_features = []
     worst_features = []
 
@@ -39,28 +63,18 @@ def find_best_and_worst_features(aspect_scores):
     return best_features, worst_features
 
 
-# Sample data
-reviews = [
-    (['camera', 'performance', 'battery'], ['Positive', 'Positive', 'Negative']),
-    (['camera', 'OS', 'battery'], ['Positive', 'Positive', 'Negative']),
-    (['price', 'performance', 'price', 'build quality', 'range of features'],
-     ['Positive', 'Positive', 'Positive', 'Negative', 'Negative']),
-    (['security', 'price'], ['Positive', 'Negative']),
-    (['design', 'performance'], ['Positive', 'Negative']),
-    (['performance', 'portability'], ['Positive', 'Positive']),
-    (['display', 'display', 'performance', 'price'], ['Positive', 'Positive', 'Positive', 'Neutral']),
-    (['OS', 'performance', 'camera'], ['Positive', 'Negative', 'Neutral']),
-    (['display', 'keyboard', 'design'], ['Positive', 'Negative', 'Negative']),
-    (['performance'], ['Negative'])
-]
+def analyze_feature_sentiments(mapped_reviews):
+    """
+    Analyze feature sentiments based on mapped reviews.
 
-# Main execution
-aspect_sentiments = group_reviews(reviews)
-aspect_scores = calculate_aspect_scores(aspect_sentiments)
-best_features, worst_features = find_best_and_worst_features(aspect_scores)
+    Args:
+        mapped_reviews (list of tuple): List of mapped reviews.
 
-print("Best Features:")
-print(best_features)
+    Returns:
+        list, list: Lists of best and worst features.
+    """
+    aspect_sentiment_counts = group_reviews(mapped_reviews)
+    aspect_scores = calculate_aspect_scores(aspect_sentiment_counts)
+    best_features, worst_features = find_best_and_worst_features(aspect_scores)
 
-print("\nWorst Features:")
-print(worst_features)
+    return best_features, worst_features
