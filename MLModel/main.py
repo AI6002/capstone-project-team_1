@@ -1,51 +1,69 @@
-from utils import extract_sentences
-from aspect_extraction import AspectExtractor
-from sentiment_analysis import SentimentAnalyzer
-import pandas as pd
+import sys
+from preprocessing import Preprocess
+from aspect_mapping import map_reviews_to_synonyms
+from feature_sentiment_analysis import analyze_feature_sentiments
 
 
-def review_analysis(df):
+def review_analysis(input_file_path, output_file_path):
     """
     Analyze the opinions toward the product based on a DataFrame of reviews.
 
     Args:
-        df (pandas.DataFrame): A DataFrame containing the reviews in a 'Review' column.
-
-    Returns:
-        pandas.DataFrame: A DataFrame containing the preprocessed reviews.
+        input_file_path (str): Path to the input file containing reviews.
+        output_file_path (str): Path to the output file for processed reviews.
     """
 
-    # review = Preprocess(df)
-    # preprocessed_data = review.preprocess_data()
-
-    # TODO: Aspect extraction
-
-    # TODO: Sentiment Analysis
-
-    pass
-
-
-if __name__ == "__main__":
-
-    reviews = []  # Initialize with an empty list
-    input_file_path = './MLModel/data/scraped_data.txt'
-    output_file_path = './MLModel/data/review_sentences.txt'
-    # Read data from the text file (each line is treated as a separate entry)
+    prep = Preprocess()
     try:
-        extract_sentences(input_file_path, output_file_path)
-    except FileNotFoundError:
-        print("The input file does not exist.")
+        prep.extract_sentences(input_file_path, output_file_path)
+    except FileNotFoundError as e:
+        print(f"Error: {e}. The input file does not exist.")
+        sys.exit(1)
     except IOError as e:
-        print(f"An error occurred while reading the input file: {str(e)}")
+        print(f"Error: {e}. An error occurred while reading the input file.")
+        sys.exit(1)
 
     with open(output_file_path, 'r', encoding='utf-8') as file:
         reviews = file.readlines()
 
-    if reviews:
-        # Create a DataFrame from the reviews
-        df = pd.DataFrame({'Review': reviews})
-
-        # Analyse the opinions toward the product
-        print(review_analysis(df))
-    else:
+    # Check if reviews were loaded
+    if not reviews:
         print("No reviews were loaded. Exiting the program.")
+        sys.exit(0)
+
+    # TODO: add training and fine tuning
+
+    reviews = [
+        (['camera', 'performance', 'battery life'], ['Positive', 'Positive', 'Negative']),
+        (['photos', 'Android experience', 'battery'], ['Positive', 'Positive', 'Negative']),
+        (['price', 'performance', 'OxygenOS', 'camera quality', 'features'],
+         ['Positive', 'Positive', 'Positive', 'Negative', 'Negative']),
+        (['camera system', 'Google services'], ['Positive', 'Negative']),
+        (['design', 'processing power'], ['Positive', 'Negative']),
+        (['performance', 'portability'], ['Positive', 'Positive']),
+        (['display', 'media consumption', 'productivity', 'price'], ['Positive', 'Positive', 'Positive', 'Neutral']),
+        (['use', 'performance', 'applications'], ['Positive', 'Negative', 'Neutral']),
+        (['display', 'keyboard', 'stylus'], ['Positive', 'Negative', 'Negative']),
+        (['processing power'], ['Negative'])
+    ]
+
+    # Call the function from the aspect_mapping module
+    mapped_reviews = map_reviews_to_synonyms(reviews)
+
+    # Now you can work with the mapped_reviews
+    print(mapped_reviews)
+
+    # Assuming you have already defined 'mapped_reviews' using the 'map_reviews_to_synonyms' function
+    best_features, worst_features = analyze_feature_sentiments(mapped_reviews)
+
+    print("Best Features:")
+    print(best_features)
+
+    print("\nWorst Features:")
+    print(worst_features)
+
+
+if __name__ == "__main__":
+    input_file_path = './MLModel/data/scraped_data.txt'
+    output_file_path = './MLModel/data/review_sentences.txt'
+    review_analysis(input_file_path, output_file_path)
