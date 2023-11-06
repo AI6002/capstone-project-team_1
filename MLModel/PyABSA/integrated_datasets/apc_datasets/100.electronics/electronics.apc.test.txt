@@ -1,0 +1,297 @@
+The iPhone 13 mini isApple's most $T$ andpocket-friendlyflagship, butyou'll probably want to spend an extra $100 on the larger iPhone 13 for better batterylife.
+affordable
+Positive
+The iPhone 13 mini isApple's most affordable and $T$flagship, butyou'll probably want to spend an extra $100 on the larger iPhone 13 for better batterylife.
+pocket-friendly
+Positive
+The iPhone 13 mini isApple's most affordable andpocket-friendlyflagship, butyou'll probably want to spend an extra $T$ on the larger iPhone 13 for better batterylife.
+$100
+Negative
+The iPhone 13 mini isApple's most affordable andpocket-friendlyflagship, butyou'll probably want to spend an extra $100 on the larger iPhone 13 for better $T$life.
+battery
+Negative
+The iPhone 8 Plus may promise better augmented reality experiences than its smaller counterpart thanks to its dual $T$ making it the one you shouldbuy.
+cameras
+Positive
+The iPhone X sets the stage forApple's nextdecade, with a sharp new $T$ and a future focus on augmentedreality.
+design
+Positive
+The iPhone XS Max is the best expression ofApple's smartphone philosophy sofar, with agiant, gorgeous $T$ connecting you toeverything. Notcheap.
+screen
+Positive
+The iPhone XS Max is the best expression ofApple's smartphone philosophy sofar, with agiant, gorgeous screen connecting you toeverything. Not $T$
+cheap
+Negative
+The Samsung Galaxy S23 Ultra is $T$ andpricey, but an exceptional mix offeatures,performance, and quality makes it the besthigh-end Android phone you canbuy.
+large
+Negative
+The Samsung Galaxy S23 Ultra is large and $T$ but an exceptional mix offeatures,performance, and quality makes it the besthigh-end Android phone you canbuy.
+pricey
+Negative
+The Samsung Galaxy S23 Ultra is large andpricey, but an exceptional mix of $T$performance, and quality makes it the besthigh-end Android phone you canbuy.
+features
+Positive
+The Samsung Galaxy S23 Ultra is large andpricey, but an exceptional mix offeatures, $T$ and quality makes it the besthigh-end Android phone you canbuy.
+performance
+Positive
+The Samsung Galaxy S23 Ultra is large andpricey, but an exceptional mix offeatures,performance, and $T$ makes it the besthigh-end Android phone you canbuy.
+quality
+Positive
+With the Galaxy S7Active, Samsung adds ashatter-resistant $T$ and a bigger battery to the already spectacular GalaxyS7, making it the best rugged phoneAT&T subscribers canget.
+build
+Positive
+With the Galaxy S7Active, Samsung adds ashatter-resistant build and a bigger $T$ to the already spectacular GalaxyS7, making it the best rugged phoneAT&T subscribers canget.
+battery
+Positive
+With the Galaxy S7Active, Samsung adds ashatter-resistant build and a bigger battery to the already spectacular GalaxyS7, making it the best $T$ phoneAT&T subscribers canget.
+rugged
+Positive
+Amazfit GTR 4 has affordable $T$ long batterylife, good health and fitnesstracking. Limited features
+price
+Positive
+Amazfit GTR 4 has affordable price long $T$life, good health and fitnesstracking. Limited features
+battery
+Positive
+Amazfit GTR 4 has affordable price long batterylife, good health and fitnesstracking. Limited $T$
+features
+Negative
+Amazfit GTS 4 Mini has an affordable $T$ long batterylife. Limited features compared to othersmartwatches.
+price
+Positive
+Amazfit GTS 4 Mini has an affordable price long $T$life. Limited features compared to othersmartwatches.
+battery
+Positive
+Amazfit GTS 4 Mini has an affordable price long batterylife. Limited $T$ compared to othersmartwatches.
+features
+Negative
+Apple MacBook Air(M2) has stunning Liquid Retina $T$ long battery life and powerful M2 chip but again comes with a highprice.
+display
+Positive
+Apple MacBook Air(M2) has stunning Liquid Retinadisplay, long $T$ life and powerful M2 chip but again comes with a highprice.
+battery
+Positive
+Apple MacBook Air(M2) has stunning Liquid Retinadisplay, long battery life and powerful $T$ but again comes with a highprice.
+M2 chip
+Positive
+Apple MacBook Air(M2) has stunning Liquid Retinadisplay, long battery life and powerful M2 chip but again comes with a high $T$
+price
+Negative
+Apple MacBook Pro(13-inch) has powerful $T$ but notouch bar.
+M2 chip
+Positive
+Apple MacBook Pro(13-inch) has powerful M2 chip but no $T$
+touch bar
+Negative
+Apple MacBook Pro14-inch has M2 Maxchip, long $T$ life and variety ofports. It isexpensive.
+battery
+Positive
+Apple MacBook Pro14-inch has M2 Maxchip, long battery life and variety of $T$ It isexpensive.
+ports
+Positive
+Apple MacBook Pro14-inch has M2 Maxchip, long battery life and variety ofports. It is $T$
+expensive
+Negative
+Apple's iPhone 13 delivers the best blend of $T$, camera and batterylife. Pricey for mostpeople.
+performance
+Positive
+Apple's iPhone 13 delivers the best blend of performance, $T$ and batterylife. Pricey for mostpeople.
+camera
+Positive
+Apple's iPhone 13 delivers the best blend of performance, camera and $T$life. Pricey for mostpeople.
+battery
+Positive
+Apple's iPhone 13 delivers the best blend of performance, camera and batterylife. $T$ for mostpeople.
+Pricey
+Negative
+Apple's iPhone 13 Pro Max is the ultimate mobile content creationmachine, with the best $T$ and longest battery life of anyiPhone.
+camera
+Positive
+Apple's iPhone 13 Pro Max is the ultimate mobile content creationmachine, with the best camera and longest $T$ life of anyiPhone.
+battery
+Positive
+Apple's iPhone 13 Pro offers all the same great $T$ for content creators as the larger ProMax, its battery justdoesn't last aslong.
+features
+Positive
+Apple's iPhone 13 Pro offers all the same great features for content creators as the larger ProMax, its $T$ justdoesn't last aslong.
+battery
+Negative
+The Samsung Galaxy A325G's excellent $T$ life and impressive design are a winning combination forbudget-phone shoppers
+battery
+Positive
+The Samsung Galaxy A325G's excellent battery life and impressive $T$ are a winning combination forbudget-phone shoppers
+design
+Positive
+The Samsung Galaxy A325G's excellent battery life and impressive design are a winning combination for $T$ shoppers
+budget-phone
+Positive
+The Samsung Galaxy A50 offers a handsome $T$ and decent midrangespecs, butit's not quite enough to compete with the Google Pixel3a.
+design
+Positive
+The Samsung Galaxy A50 offers a handsome design and decent midrange $T$ butit's not quite enough to compete with the Google Pixel3a.
+specs
+Positive
+The Samsung Galaxy A52 5G is a $T$ and durable phone with a gorgeous 120Hz AMOLEDdisplay, but its slack performance makes it a hard sell
+handsome
+Positive
+The Samsung Galaxy A52 5G is a handsome and $T$ phone with a gorgeous 120Hz AMOLEDdisplay, but its slack performance makes it a hard sell
+durable
+Positive
+The Samsung Galaxy A52 5G is a handsome and durable phone with a gorgeous 120Hz AMOLED $T$ but its slack performance makes it a hard sell
+display
+Positive
+The Samsung Galaxy A52 5G is a handsome and durable phone with a gorgeous 120Hz AMOLEDdisplay, but its slack $T$ makes it a hard sell
+performance
+Negative
+The Samsung Galaxy A52 5G is a handsome and durable phone with a gorgeous 120Hz AMOLEDdisplay, but its slack performance makes it a $T$
+hard sell
+Negative
+The Samsung Galaxy A53 has an excellent build $T$,display, andprice. But not recommended for high performancetasks.
+quality
+Positive
+The Samsung Galaxy A53 has an excellent build quality, $T$ andprice. But not recommended for high performancetasks.
+display
+Positive
+The Samsung Galaxy A53 has an excellent build quality,display, and $T$ But not recommended for high performancetasks.
+price
+Positive
+The Samsung Galaxy A53 has an excellent build quality,display, andprice. But not recommended for high $T$tasks.
+performance
+Negative
+The Samsung Galaxy A54 5G is an $T$ phone thatdoesn't skimp on quality orfeatures, making it an appealing alternative to priceyflagships.
+affordable
+Positive
+The Samsung Galaxy A54 5G is an affordable phone thatdoesn't skimp on $T$ orfeatures, making it an appealing alternative to priceyflagships.
+quality
+Positive
+The Samsung Galaxy A54 5G is an affordable phone thatdoesn't skimp on quality or $T$ making it an appealing alternative to priceyflagships.
+features
+Positive
+The Samsung Galaxy J3 is an $T$AT&T phone with the latest Android software andsuper-long batterylife.
+affordable
+Positive
+The Samsung Galaxy J3 is an affordableAT&T phone with the latest Android $T$ andsuper-long batterylife.
+software
+Positive
+The Samsung Galaxy J3 is an affordableAT&T phone with the latest Android software andsuper-long $T$life.
+battery
+Positive
+If you want an Android tablet with great $T$ thatwon't break thebank, this Lenovo Tab P11 Plus is perfect foryou. It has Sharp display, and clearspeakers, Perkyperformance. Problems are Unimpressivecameras, No promise for OS updates after Android 12
+performance
+Positive
+If you want an Android tablet with great performance thatwon't break thebank, this Lenovo Tab P11 Plus is perfect foryou. It has Sharp $T$, and clearspeakers, Perkyperformance. Problems are Unimpressivecameras, No promise for OS updates after Android 12
+display
+Positive
+If you want an Android tablet with great performance thatwon't break thebank, this Lenovo Tab P11 Plus is perfect foryou. It has Sharp display, and clear $T$ Perkyperformance. Problems are Unimpressivecameras, No promise for OS updates after Android 12
+speakers
+Positive
+If you want an Android tablet with great performance thatwon't break thebank, this Lenovo Tab P11 Plus is perfect foryou. It has Sharp display, and clearspeakers, Perky $T$ Problems are Unimpressivecameras, No promise for OS updates after Android 12
+performance
+Positive
+If you want an Android tablet with great performance thatwon't break thebank, this Lenovo Tab P11 Plus is perfect foryou. It has Sharp display, and clearspeakers, Perkyperformance. Problems are Unimpressive $T$ No promise for OS updates after Android 12
+cameras
+Negative
+If you want an Android tablet with great performance thatwon't break thebank, this Lenovo Tab P11 Plus is perfect foryou. It has Sharp display, and clearspeakers, Perkyperformance. Problems are Unimpressivecameras, No promise for $T$ updates after Android 12
+OS
+Negative
+Samsung Galaxy Tab S7 Plus is a tablet with $T$ andAndroid. Comes with Solid build quality beautiful Super AMOLED display,Textured S Pen tip makes writing on screen feel natural and 5G connectivityoption.However, it could becheaper.
+5G connectivity
+Positive
+Samsung Galaxy Tab S7 Plus is a tablet with 5G connectivity andAndroid. Comes with Solid $T$ beautiful Super AMOLED display,Textured S Pen tip makes writing on screen feel natural and 5G connectivityoption.However, it could becheaper.
+build quality
+Positive
+Samsung Galaxy Tab S7 Plus is a tablet with 5G connectivity andAndroid. Comes with Solid build quality beautiful Super AMOLED $T$,Textured S Pen tip makes writing on screen feel natural and 5G connectivityoption.However, it could becheaper.
+display
+Positive
+Samsung Galaxy Tab S7 Plus is a tablet with 5G connectivity andAndroid. Comes with Solid build quality beautiful Super AMOLED display,Textured S Pen tip makes writing on screen feel natural and 5G connectivityoption.However, it could be $T$
+cheaper
+Negative
+The Amazon Fire Max 11 gives Amazon Prime subscribers thebiggest-possible $T$ to experience their content at a surprisingly affordableprice, though Appstore limitations may nix the appeal forsome. Drawbacks are limitedapp selection.
+screen
+Positive
+The Amazon Fire Max 11 gives Amazon Prime subscribers thebiggest-possible screen to experience their content at a surprisingly affordable $T$ though Appstore limitations may nix the appeal forsome. Drawbacks are limitedapp selection.
+price
+Positive
+The Amazon Fire Max 11 gives Amazon Prime subscribers thebiggest-possible screen to experience their content at a surprisingly affordableprice, though Appstore limitations may nix the appeal forsome. Drawbacks are limited $T$
+app selection
+Negative
+Amazon Fire HD 8 is hard to beat awell-made tablet for less than$100. It is $T$ has good battery life but again limitedapp selection.
+lightweight
+Positive
+Amazon Fire HD 8 is hard to beat awell-made tablet for less than$100. It islightweight, has good $T$ life but again limitedapp selection.
+battery
+Positive
+Amazon Fire HD 8 is hard to beat awell-made tablet for less than$100. It islightweight, has good battery life but again limited $T$
+app selection
+Negative
+The Google Pixel Tablet bridges the gap between tablet and smart $T$ surprisinglywell, but it costs more than theentry-leveliPad.
+display
+Positive
+The Google Pixel Tablet bridges the gap between tablet and smart display surprisinglywell, but it $T$ more than theentry-leveliPad.
+costs
+Negative
+Apple's iPad Air so thin and light that youwon't even noticeit's in yourbag. Its impressive $T$ andlight. Very good camera butexpensive.
+slimy
+Positive
+Apple's iPad Air so thin and light that youwon't even noticeit's in yourbag. Its impressive slimy and $T$ Very good camera butexpensive.
+light
+Positive
+Apple's iPad Air so thin and light that youwon't even noticeit's in yourbag. Its impressive slimy andlight. Very good $T$ butexpensive.
+camera
+Positive
+Apple's iPad Air so thin and light that youwon't even noticeit's in yourbag. Its impressive slimy andlight. Very good camera but $T$
+expensive
+Negative
+Apple's new iPad Pro pushes the limits of what an iPad cando, but it does so at the expensive $T$ of aMacBook. It has beautiful screen and fastprocessors.
+price
+Negative
+Apple's new iPad Pro pushes the limits of what an iPad cando, but it does so at the expensive price of aMacBook. It has beautiful $T$ and fastprocessors.
+screen
+Positive
+Apple's new iPad Pro pushes the limits of what an iPad cando, but it does so at the expensive price of aMacBook. It has beautiful screen and fast $T$
+processors
+Positive
+Samsung S8 Tablet comes with a $T$ and smoothperformance. It includes S Pen and Dex mode enables amulti-windowUI. No creative apps like Apple and some authentication bugs are thedrawbacks.
+fast
+Positive
+Samsung S8 Tablet comes with a fast and smooth $T$ It includes S Pen and Dex mode enables amulti-windowUI. No creative apps like Apple and some authentication bugs are thedrawbacks.
+performance
+Positive
+Samsung S8 Tablet comes with a fast and smoothperformance. It includes S Pen and Dex mode enables amulti-windowUI. No creative $T$ like Apple and some authentication bugs are thedrawbacks.
+apps
+Negative
+Samsung S8 Tablet comes with a fast and smoothperformance. It includes S Pen and Dex mode enables amulti-windowUI. No creative apps like Apple and some $T$ bugs are thedrawbacks.
+authentication
+Negative
+The Samsung Galaxy Tab S6 is the best Android tablet on the market for power users but lacks the same polishyou'll find on the iPadPro. It has good $T$, display and performance but also buggy and unrealiable fingerprintsensor.
+built quality
+Positive
+The Samsung Galaxy Tab S6 is the best Android tablet on the market for power users but lacks the same polishyou'll find on the iPadPro. It has good built quality, $T$ and performance but also buggy and unrealiable fingerprintsensor.
+display
+Positive
+The Samsung Galaxy Tab S6 is the best Android tablet on the market for power users but lacks the same polishyou'll find on the iPadPro. It has good built quality, display and $T$ but also buggy and unrealiable fingerprintsensor.
+performance
+Positive
+The Samsung Galaxy Tab S6 is the best Android tablet on the market for power users but lacks the same polishyou'll find on the iPadPro. It has good built quality, display and performance but also $T$ and unrealiable fingerprintsensor.
+buggy
+Negative
+The Samsung Galaxy Tab S6 is the best Android tablet on the market for power users but lacks the same polishyou'll find on the iPadPro. It has good built quality, display and performance but also buggy and $T$ fingerprintsensor.
+unrealiable
+Negative
+My new Pixel 7 Pro is the best phoneI've everhad! The $T$ isincredible, and the screen is so clear andbright. The one thing Idon't like about my Pixel 7 Pro is thatit's a bit too big and heavy for mytaste.
+camera
+Positive
+My new Pixel 7 Pro is the best phoneI've everhad! The camera isincredible, and the $T$ is so clear andbright. The one thing Idon't like about my Pixel 7 Pro is thatit's a bit too big and heavy for mytaste.
+screen
+Positive
+My new Pixel 7 Pro is the best phoneI've everhad! The camera isincredible, and the screen is so $T$ andbright. The one thing Idon't like about my Pixel 7 Pro is thatit's a bit too big and heavy for mytaste.
+clear
+Positive
+My new Pixel 7 Pro is the best phoneI've everhad! The camera isincredible, and the screen is so clear and $T$ The one thing Idon't like about my Pixel 7 Pro is thatit's a bit too big and heavy for mytaste.
+bright.
+Positive
+My new Pixel 7 Pro is the best phoneI've everhad! The camera isincredible, and the screen is so clear andbright. The one thing Idon't like about my Pixel 7 Pro is thatit's a bit too $T$ and heavy for mytaste.
+big
+Negative
+My new Pixel 7 Pro is the best phoneI've everhad! The camera isincredible, and the screen is so clear andbright. The one thing Idon't like about my Pixel 7 Pro is thatit's a bit too big and $T$ for mytaste.
+heavy
+Negative
