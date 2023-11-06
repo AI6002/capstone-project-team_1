@@ -13,6 +13,10 @@ from pyabsa.functional import ATEPCModelList
 from pyabsa.functional import Trainer, ATEPCTrainer
 from pyabsa.functional import ABSADatasetList
 from pyabsa.functional import ATEPCConfigManager
+from pyabsa import available_checkpoints
+from pyabsa import ATEPCCheckpointManager
+
+checkpoint_map = available_checkpoints('atepc')
 
 config = ATEPCConfigManager.get_atepc_config_english()
 config.model = ATEPCModelList.FAST_LCF_ATEPC
