@@ -1,0 +1,720 @@
+ $T$ is not as bright as some competitors of Dell Inspiron13.However, it is affordable.
+Display
+Negative
+ Display is not as bright as some competitors of Dell Inspiron13.However, it is $T$.
+affordable
+Positive
+Absence of headphone jackaside, the 7 Plus is the best iPhone you canbuy, with more $T$ than its smaller counterpart and dual cameras that peer towardApple'sfuture.
+memory
+Positive
+Absence of headphone jackaside, the 7 Plus is the best iPhone you canbuy, with more memory than its smaller counterpart and dual $T$ that peer towardApple'sfuture.
+cameras
+Positive
+Apple MacBook Pro16-inch has a stunning Liquid Retina XDR $T$ long batterylife, versatileports. Drawback is that it isexpensive.
+display
+Positive
+Apple MacBook Pro16-inch has a stunning Liquid Retina XDRdisplay, long $T$life, versatileports. Drawback is that it isexpensive.
+battery
+Positive
+Apple MacBook Pro16-inch has a stunning Liquid Retina XDRdisplay, long batterylife, versatile $T$ Drawback is that it isexpensive.
+ports
+Positive
+Apple MacBook Pro16-inch has a stunning Liquid Retina XDRdisplay, long batterylife, versatileports. Drawback is that it is $T$
+expensive
+Negative
+Apple Watch Series 8 has wide range of $T$ including health and fitnesstracking, sleeptracking, andnotifications. Limited Batterylife.
+features
+Positive
+Apple Watch Series 8 has wide range offeatures, including health and fitnesstracking, sleeptracking, andnotifications. Limited $T$life.
+Battery
+Negative
+Apple's iPhone 12 mini delivers the best $T$ to-power ratio of any 2020iPhone, bringingtop-of-the-line features to a phone that easily fits intosmaller hands.
+price
+Positive
+Apple's iPhone 12 mini delivers the bestprice-to-power ratio of any 2020iPhone, bringingtop-of-the-line $T$ to a phone that easily fits intosmaller hands.
+features
+Positive
+Apple's iPhone 12 mini delivers the bestprice-to-power ratio of any 2020iPhone, bringingtop-of-the-line features to a phone that easily fits into $T$
+smaller hands
+Positive
+Dell Precision 5560has professional-grade $T$ durable design. Littlepricey.
+graphics card
+Positive
+Dell Precision 5560has professional-gradegraphics card, $T$ Littlepricey.
+ durable design
+Positive
+Dell Precision 5560has professional-gradegraphics card, durable design. Little $T$
+pricey
+Negative
+Dell Vostro 15 has goodbusiness-grade $T$ and powerfulbattery. Display notgood.
+security features
+Positive
+Dell Vostro 15 has goodbusiness-grade security features and powerful $T$ Display notgood.
+battery
+Positive
+Dell Vostro 15 has goodbusiness-grade security features and powerfulbattery. $T$ notgood.
+Display
+Negative
+Dell XPS 13 Plus has a futuristic $T$ powerful performance and a long batterylife. It is expensive and limited ports aswell.
+design
+Positive
+Dell XPS 13 Plus has a futuristicdesign, powerful $T$ and a long batterylife. It is expensive and limited ports aswell.
+performance
+Positive
+Dell XPS 13 Plus has a futuristicdesign, powerful performance and a long $T$life. It is expensive and limited ports aswell.
+battery
+Positive
+Dell XPS 13 Plus has a futuristicdesign, powerful performance and a long batterylife. It is $T$ and limited ports aswell.
+expensive
+Negative
+Dell XPS 13 Plus has a futuristicdesign, powerful performance and a long batterylife. It is expensive and limited $T$ aswell.
+ports
+Negative
+Dell XPS 15 has $T$ and immersivedisplay, powerful performance and a long batterylife. Pricey andheavy.
+large
+Positive
+Dell XPS 15 has large and immersive $T$ powerful performance and a long batterylife. Pricey andheavy.
+display
+Positive
+Dell XPS 15 has large and immersivedisplay, powerful $T$ and a long batterylife. Pricey andheavy.
+performance
+Positive
+Dell XPS 15 has large and immersivedisplay, powerful performance and a long $T$life. Pricey andheavy.
+battery
+Positive
+Dell XPS 15 has large and immersivedisplay, powerful performance and a long batterylife. $T$ andheavy.
+Pricey
+Negative
+Dell XPS 15 has large and immersivedisplay, powerful performance and a long batterylife. Pricey and $T$
+heavy
+Negative
+Dell XPS Desktop is $T$ but stylish indesign.
+expensive
+Negative
+Dell XPS Desktop is expensive but stylish in $T$
+design
+Positive
+Fitbit Sense 2 has excellent health and fitnesstracking, long $T$life, affordableprice. Limited features compared to other smartwatches
+battery
+Positive
+Fitbit Sense 2 has excellent health and fitnesstracking, long batterylife, affordable $T$ Limited features compared to other smartwatches
+price
+Positive
+Fitbit Sense 2 has excellent health and fitnesstracking, long batterylife, affordableprice. Limited $T$ compared to other smartwatches
+features
+Negative
+Garmin Fenix 7 has rugged $T$ long batterylife, excellent health and fitnesstracking,built-inGPS.Expensive, limited features compared to other smartwatches
+design
+Positive
+Garmin Fenix 7 has ruggeddesign, long $T$life, excellent health and fitnesstracking,built-inGPS.Expensive, limited features compared to other smartwatches
+battery
+Positive
+Garmin Fenix 7 has ruggeddesign, long batterylife, excellent health and fitnesstracking,built-inGPS. $T$ limited features compared to other smartwatches
+Expensive
+Negative
+Garmin Fenix 7 has ruggeddesign, long batterylife, excellent health and fitnesstracking,built-inGPS.Expensive, limited $T$ compared to other smartwatches
+features
+Negative
+Google Pixel Watch keeps a clean and simple $T$ plus wide range offeatures. Limitedbattery.
+design
+Positive
+Google Pixel Watch keeps a clean and simple design plus wide range of $T$ Limitedbattery.
+features
+Positive
+Google Pixel Watch keeps a clean and simple design plus wide range offeatures. Limited $T$
+battery
+Negative
+The Galaxy Z Flip3 has a powerful $T$ and an elegant foldingdesign, but its portability and style come at the cost of batterylife.
+processor
+Positive
+The Galaxy Z Flip3 has a powerful processor and an elegant folding $T$ but its portability and style come at the cost of batterylife.
+design
+Positive
+The Galaxy Z Flip3 has a powerful processor and an elegant foldingdesign, but its $T$ and style come at the cost of batterylife.
+portability
+Positive
+The Galaxy Z Flip3 has a powerful processor and an elegant foldingdesign, but its portability and $T$ come at the cost of batterylife.
+style
+Positive
+The Galaxy Z Flip3 has a powerful processor and an elegant foldingdesign, but its portability and style come at the cost of $T$life.
+battery
+Negative
+HP Dragonfly Pro Chromebook(2023) has an excellent $T$, top quality build plus super brightdisplay. Noheadphone jack, battery problem andpricey.
+performance
+Positive
+HP Dragonfly Pro Chromebook(2023) has an excellent performance, top quality $T$ plus super brightdisplay. Noheadphone jack, battery problem andpricey.
+build
+Positive
+HP Dragonfly Pro Chromebook(2023) has an excellent performance, top quality build plus super bright $T$ Noheadphone jack, battery problem andpricey.
+display
+Positive
+HP Dragonfly Pro Chromebook(2023) has an excellent performance, top quality build plus super brightdisplay. No $T$ battery problem andpricey.
+headphone jack
+Negative
+HP Dragonfly Pro Chromebook(2023) has an excellent performance, top quality build plus super brightdisplay. Noheadphone jack, $T$ problem andpricey.
+battery
+Negative
+HP Dragonfly Pro Chromebook(2023) has an excellent performance, top quality build plus super brightdisplay. Noheadphone jack, battery problem and $T$
+pricey
+Negative
+HP EliteBook 840 G9comes withbusiness-grade $T$ anddurability, long batterylife, powerfulperformance. But I found it heavy than my previous HPpavilion.
+security
+Positive
+HP EliteBook 840 G9comes withbusiness-grade security and $T$ long batterylife, powerfulperformance. But I found it heavy than my previous HPpavilion.
+durability
+Positive
+HP EliteBook 840 G9comes withbusiness-grade security anddurability, long $T$life, powerfulperformance. But I found it heavy than my previous HPpavilion.
+battery
+Positive
+HP EliteBook 840 G9comes withbusiness-grade security anddurability, long batterylife, powerful $T$ But I found it heavy than my previous HPpavilion.
+performance
+Positive
+HP EliteBook 840 G9comes withbusiness-grade security anddurability, long batterylife, powerfulperformance. But I found it $T$ than my previous HPpavilion.
+heavy
+Negative
+HP Envy 16 has a $T$ and stylishdesign, long batterylife, sharp display and exceptionalperformance, comes with heaviness and overbudget.
+sleek
+Positive
+HP Envy 16 has a sleek and stylish $T$ long batterylife, sharp display and exceptionalperformance, comes with heaviness and overbudget.
+design
+Positive
+HP Envy 16 has a sleek and stylishdesign, long $T$life, sharp display and exceptionalperformance, comes with heaviness and overbudget.
+battery
+Positive
+HP Envy 16 has a sleek and stylishdesign, long batterylife, sharp $T$ and exceptionalperformance, comes with heaviness and overbudget.
+display
+Positive
+HP Envy 16 has a sleek and stylishdesign, long batterylife, sharp display and exceptional $T$ comes with heaviness and overbudget.
+performance
+Positive
+HP Envy 16 has a sleek and stylishdesign, long batterylife, sharp display and exceptionalperformance, comes with $T$ and overbudget.
+heaviness
+Negative
+HP Envy 16 has a sleek and stylishdesign, long batterylife, sharp display and exceptionalperformance, comes with heaviness and over $T$
+budget
+Negative
+HP EnvyAll-in-One owns a stylish $T$ sharp display and goodperformance. Expensive and has limitedports.
+design
+Positive
+HP EnvyAll-in-One owns a stylishdesign, sharp $T$ and goodperformance. Expensive and has limitedports.
+display
+Positive
+HP EnvyAll-in-One owns a stylishdesign, sharp display and good $T$ Expensive and has limitedports.
+performance
+Positive
+HP EnvyAll-in-One owns a stylishdesign, sharp display and goodperformance. $T$ and has limitedports.
+Expensive
+Negative
+HP EnvyAll-in-One owns a stylishdesign, sharp display and goodperformance. Expensive and has limited $T$
+ports
+Negative
+HP Omen 17 keeps a powerful $T$ dedicatedgraphics card, customizabledesign. Battery does not longlast.
+performance
+Positive
+HP Omen 17 keeps a powerfulperformance, dedicated $T$ customizabledesign. Battery does not longlast.
+graphics card
+Positive
+HP Omen 17 keeps a powerfulperformance, dedicatedgraphics card, customizable $T$ Battery does not longlast.
+design
+Positive
+HP Omen 17 keeps a powerfulperformance, dedicatedgraphics card, customizabledesign. $T$ does not longlast.
+Battery
+Negative
+HP Pavilion Aero 13 is a $T$ andportable design, long batterylife, affordable price but display is not as bright as some competitors and also has limitedports.
+lightweight
+Positive
+HP Pavilion Aero 13 is a lightweight and $T$ long batterylife, affordable price but display is not as bright as some competitors and also has limitedports.
+portable design
+Positive
+HP Pavilion Aero 13 is a lightweight andportable design, long $T$life, affordable price but display is not as bright as some competitors and also has limitedports.
+battery
+Positive
+HP Pavilion Aero 13 is a lightweight andportable design, long batterylife, affordable $T$ but display is not as bright as some competitors and also has limitedports.
+price
+Positive
+HP Pavilion Aero 13 is a lightweight andportable design, long batterylife, affordable price but $T$ is not as bright as some competitors and also has limitedports.
+display
+Negative
+HP Pavilion Aero 13 is a lightweight andportable design, long batterylife, affordable price but display is not as bright as some competitors and also has limited $T$
+ports
+Negative
+HP PavilionAll-in-One is a nice computer, good $T$ amazing display and I would highly recommend this to myfriend.
+performance
+Positive
+HP PavilionAll-in-One is a nice computer, goodperformance, amazing $T$ and I would highly recommend this to myfriend.
+display
+Positive
+HP Spectre x360 16 comes long $T$life, powerful performance with versatile2-in-1design. But highlyexpensive.
+battery
+Positive
+HP Spectre x360 16 comes long batterylife, powerful $T$ with versatile2-in-1design. But highlyexpensive.
+performance
+Positive
+HP Spectre x360 16 comes long batterylife, powerful performance with versatile2-in-1 $T$ But highlyexpensive.
+design
+Positive
+HP Spectre x360 16 comes long batterylife, powerful performance with versatile2-in-1design. But highly $T$
+expensive
+Negative
+HP Victus 16 has an affordable $T$ dedicatedgraphics card, goodperformance, Short battery life plusheavy.
+price
+Positive
+HP Victus 16 has an affordableprice, dedicated $T$ goodperformance, Short battery life plusheavy.
+graphics card
+Positive
+HP Victus 16 has an affordableprice, dedicatedgraphics card, good $T$ Short battery life plusheavy.
+performance
+Positive
+HP Victus 16 has an affordableprice, dedicatedgraphics card, goodperformance, Short $T$ life plusheavy.
+battery
+Negative
+HP Victus 16 has an affordableprice, dedicatedgraphics card, goodperformance, Short battery life plus $T$
+heavy
+Negative
+Huawei Watch GT 3 has an affordable $T$ long batterylife, good health and fitnesstracking. Limited features compared to other smartwatches
+price
+Positive
+Huawei Watch GT 3 has an affordableprice, long $T$life, good health and fitnesstracking. Limited features compared to other smartwatches
+battery
+Positive
+Huawei Watch GT 3 has an affordableprice, long batterylife, good health and fitnesstracking. Limited $T$ compared to other smartwatches
+features
+Negative
+Huawei Watch GT 3 Pro has stylish $T$ long batterylife, good health and fitnesstracking. Limitedfeatures.
+design
+Positive
+Huawei Watch GT 3 Pro has stylishdesign, long $T$life, good health and fitnesstracking. Limitedfeatures.
+battery
+Positive
+Huawei Watch GT 3 Pro has stylishdesign, long batterylife, good health and fitnesstracking. Limited $T$
+features
+Negative
+Pixel 7 series of Google comes with excellent $T$ smooth performance and design but slippery to hold.
+camera
+Positive
+Pixel 7 series of Google comes with excellentcamera, smooth $T$ and design but slippery to hold.
+performance
+Positive
+Pixel 7 series of Google comes with excellentcamera, smooth performance and $T$ but slippery to hold.
+design
+Positive
+Pixel 7 series of Google comes with excellentcamera, smooth performance and design but $T$ to hold.
+slippery
+Negative
+Ifyou're a serious creative whodoesn't want a hugephone, the iPhone 12 Pro packs superior $T$ and video capability into a reasonablysized, beautifully designed body
+imaging
+Positive
+Ifyou're a serious creative whodoesn't want a hugephone, the iPhone 12 Pro packs superior imaging and $T$ capability into a reasonablysized, beautifully designed body
+video
+Positive
+Ifyou're a serious creative whodoesn't want a hugephone, the iPhone 12 Pro packs superior imaging and video capability into a reasonably $T$ beautifully designed body
+sized
+Positive
+Ifyou're a serious creative whodoesn't want a hugephone, the iPhone 12 Pro packs superior imaging and video capability into a reasonablysized, beautifully designed $T$
+body
+Positive
+iPhone 13 s brighter $T$ longer battery life and powerfulcameras. Fell from a height of about 1 meter on my office floor and the screen broke
+display
+Positive
+iPhone 13 s brighterdisplay, longer $T$ life and powerfulcameras. Fell from a height of about 1 meter on my office floor and the screen broke
+battery
+Positive
+iPhone 13 s brighterdisplay, longer battery life and powerful $T$ Fell from a height of about 1 meter on my office floor and the screen broke
+cameras
+Positive
+iPhone 13 s brighterdisplay, longer battery life and powerfulcameras. Fell from a height of about 1 meter on my office floor and the $T$ broke
+screen
+Negative
+iPhone 14doesn't offer all of the innovative new $T$ available to the Proline, Apple has made plenty of small tweaks under the hood to boost its performance and keep itcompetitive.
+features
+Positive
+iPhone 14doesn't offer all of the innovative new features available to the Proline, Apple has made plenty of small tweaks under the hood to boost its $T$ and keep itcompetitive.
+performance
+Positive
+Premium $T$ good batterylife, and anabove-average camera make the Samsung Galaxy S23 one of the best compact Android phones you canbuy.
+specs
+Positive
+Premiumspecs, good $T$life, and anabove-average camera make the Samsung Galaxy S23 one of the best compact Android phones you canbuy.
+battery
+Positive
+Premiumspecs, good batterylife, and anabove-average $T$ make the Samsung Galaxy S23 one of the best compact Android phones you canbuy.
+camera
+Positive
+Samsung Galaxy Watch 5 has powerful $T$ wide range offeatures, including health and fitnesstracking, sleeptracking, andnotifications. Limited Battery life
+performance
+Positive
+Samsung Galaxy Watch 5 has powerfulperformance, wide range of $T$ including health and fitnesstracking, sleeptracking, andnotifications. Limited Battery life
+features
+Positive
+Samsung Galaxy Watch 5 has powerfulperformance, wide range offeatures, including health and fitnesstracking, sleeptracking, andnotifications. Limited $T$ life
+Battery
+Negative
+Suunto 7 has a Rugged $T$ long batterylife,built-inGPS, good health and fitnesstracking. Limited features compared to other smartwatches
+design
+Positive
+Suunto 7 has a Rugged design long $T$life,built-inGPS, good health and fitnesstracking. Limited features compared to other smartwatches
+battery
+Positive
+Suunto 7 has a Rugged design long batterylife,built-inGPS, good health and fitnesstracking. Limited $T$ compared to other smartwatches
+features
+Negative
+The 2020 Apple iPhone SE is a petite powerhouse withno-compromise $T$ for hundreds of dollars less than other recentiPhones.
+performance
+Positive
+The 2020 Apple iPhone SE is a petite powerhouse withno-compromise performance for hundreds of $T$ less than other recentiPhones.
+dollars
+Positive
+The Apple iPhone 14 Pro Max is the best iPhoneoverall, with excellent $T$ stellar batterylife, sharpcameras, and a number of useful features youdon't get with the standardmodels.
+performance
+Positive
+The Apple iPhone 14 Pro Max is the best iPhoneoverall, with excellentperformance, stellar $T$life, sharpcameras, and a number of useful features youdon't get with the standardmodels.
+battery
+Positive
+The Apple iPhone 14 Pro Max is the best iPhoneoverall, with excellentperformance, stellar batterylife, sharp $T$ and a number of useful features youdon't get with the standardmodels.
+cameras
+Positive
+The Apple iPhone 14 Pro Max is the best iPhoneoverall, with excellentperformance, stellar batterylife, sharpcameras, and a number of useful $T$ youdon't get with the standardmodels.
+features
+Positive
+IPhone XS in this $T$ range isgreat. Some people will prefer iphone 11 over this due its battery&latest chip. But XS is almost equal in performance with11.
+price
+Positive
+IPhone XS in this price range isgreat. Some people will prefer iphone 11 over this due its $T$&latest chip. But XS is almost equal in performance with11.
+battery
+Positive
+IPhone XS in this price range isgreat. Some people will prefer iphone 11 over this due its battery& $T$ But XS is almost equal in performance with11.
+latest chip
+Positive
+IPhone XS in this price range isgreat. Some people will prefer iphone 11 over this due its battery&latest chip. But XS is almost equal in $T$ with11.
+performance
+Positive
+The $T$ Samsung Galaxy A10e is asmall, handsome phone that feels good in the hand but lacks in performance and has no fingerprint sensor
+budget-friendly
+Positive
+Thebudget-friendly Samsung Galaxy A10e is a $T$ handsome phone that feels good in the hand but lacks in performance and has no fingerprint sensor
+small
+Positive
+Thebudget-friendly Samsung Galaxy A10e is asmall, $T$ phone that feels good in the hand but lacks in performance and has no fingerprint sensor
+handsome
+Positive
+Thebudget-friendly Samsung Galaxy A10e is asmall, handsome phone that feels good in the hand but lacks in $T$ and has no fingerprint sensor
+performance
+Negative
+Thebudget-friendly Samsung Galaxy A10e is asmall, handsome phone that feels good in the hand but lacks in performance and has no $T$ sensor
+fingerprint
+Negative
+The Galaxy S21 Ultra delivers ahigh-quality superzoom $T$ that trulyworks, supportsSamsung's excellent SPen, and sets the bar for smartphone features in2021. Butexpensive.
+camera
+Positive
+The Galaxy S21 Ultra delivers ahigh-quality superzoom camera that trulyworks, supportsSamsung's excellent SPen, and sets the bar for smartphone $T$ in2021. Butexpensive.
+features
+Positive
+The Galaxy S21 Ultra delivers ahigh-quality superzoom camera that trulyworks, supportsSamsung's excellent SPen, and sets the bar for smartphone features in2021. But $T$
+expensive
+Negative
+The iPhone 11 offers solid $T$ performance and power to spare for a relatively reasonableprice. Itisn'texciting, butit's a good replacement for olderiPhones. But also limitedfeatures.
+camera
+Positive
+The iPhone 11 offers solid camera performance and power to spare for a relatively reasonable $T$ Itisn'texciting, butit's a good replacement for olderiPhones. But also limitedfeatures.
+price
+Positive
+The iPhone 11 offers solid camera performance and power to spare for a relatively reasonableprice. Itisn'texciting, butit's a good replacement for olderiPhones. But also limited $T$
+features
+Negative
+The iPhone 12 ProMax, the largest model inApple's iPhone 12lineup, addssuper-long $T$ life and a giant screen to the 12Pro's excellent cameracapabilities.
+battery
+Positive
+The iPhone 12 ProMax, the largest model inApple's iPhone 12lineup, addssuper-long battery life and a giant $T$ to the 12Pro's excellent cameracapabilities.
+screen
+Positive
+The iPhone 12 ProMax, the largest model inApple's iPhone 12lineup, addssuper-long battery life and a giant screen to the 12Pro's excellent $T$capabilities.
+camera
+Positive
+The iPhone 12 series brings top notch $T$, world-class connectivity, and an improved Night-mode $T$ to the nation's most popular phone.
+design
+Positive
+The iPhone 12 series brings top notch design, world-class connectivity, and an improved Night-mode $T$ to the nation's most popular phone.
+camera
+Positive
+The Samsung Galaxy S6 Edge is a $T$ powerfulsmartphone, butyou're paying a pretty steep premium for curvedglass. Expensive and Edge designdoesn't bring usefulfunctions.
+gorgeous
+Positive
+The Samsung Galaxy S6 Edge is agorgeous, powerful $T$ butyou're paying a pretty steep premium for curvedglass. Expensive and Edge designdoesn't bring usefulfunctions.
+smartphone
+Positive
+The Samsung Galaxy S6 Edge is agorgeous, powerfulsmartphone, butyou're paying a pretty steep premium for curvedglass. $T$ and Edge designdoesn't bring usefulfunctions.
+Expensive
+Negative
+The Samsung Galaxy S6 Edge is agorgeous, powerfulsmartphone, butyou're paying a pretty steep premium for curvedglass. Expensive and $T$doesn't bring usefulfunctions.
+Edge design
+Negative
+The Samsung Galaxy S6 edge+ onAT&T is a $T$beautiful, powerfulsmartphone, with asky-high pricethat's tough tojustify.
+big
+Positive
+The Samsung Galaxy S6 edge+ onAT&T is abig, $T$ powerfulsmartphone, with asky-high pricethat's tough tojustify.
+beautiful
+Positive
+The Samsung Galaxy S6 edge+ onAT&T is abig,beautiful, $T$smartphone, with asky-high pricethat's tough tojustify.
+powerful
+Positive
+The Samsung Galaxy S6 edge+ onAT&T is abig,beautiful, powerfulsmartphone, with a $T$that's tough tojustify.
+sky-high price
+Negative
+The Samsung Galaxy S7 Edge combinesstate-of-the-art components with a smart gorgeous $T$ and a bigbattery, making it a killer Androidsmartphone. Processor lagssometimes.
+design
+Positive
+The Samsung Galaxy S7 Edge combinesstate-of-the-art components with a smart gorgeous design and a big $T$ making it a killer Androidsmartphone. Processor lagssometimes.
+battery
+Positive
+The Samsung Galaxy S7 Edge combinesstate-of-the-art components with a smart gorgeous design and a bigbattery, making it a killer Androidsmartphone. $T$ lagssometimes.
+Processor
+Negative
+The Samsung Galaxy S8 Active takes the best phone of theyear, makes it $T$ and packs in a biggerbattery.It's the ultimate ruggedphone. Heavy inweight.
+tougher
+Positive
+The Samsung Galaxy S8 Active takes the best phone of theyear, makes ittougher, and packs in a bigger $T$It's the ultimate ruggedphone. Heavy inweight.
+battery
+Positive
+The Samsung Galaxy S8 Active takes the best phone of theyear, makes ittougher, and packs in a biggerbattery.It's the ultimate $T$phone. Heavy inweight.
+rugged
+Positive
+The Samsung Galaxy S8 Active takes the best phone of theyear, makes ittougher, and packs in a biggerbattery.It's the ultimate ruggedphone. $T$ inweight.
+Heavy
+Negative
+The Samsung Galaxy S8+ is a larger version of the excellent GalaxyS8, trading a slightly bigger $T$ for a form factor thatisn't as easy to use in one hand
+battery
+Positive
+The Samsung Galaxy S8+ is a larger version of the excellent GalaxyS8, trading a slightly bigger battery for a form factor thatisn't as $T$ in one hand
+easy to use
+Negative
+The Samsung Galaxy S9 puts the latest LTE bands and a greatlow-light $T$ into a smaller form factor than the S9+ for the bestone-handed phone rightnow. Littleexpensive.
+camera
+Positive
+The Samsung Galaxy S9 puts the latest LTE bands and a greatlow-light camera into a smaller form factor than the S9+ for the best $T$ rightnow. Littleexpensive.
+one-handed phone
+Positive
+The Samsung Galaxy S9 puts the latest LTE bands and a greatlow-light camera into a smaller form factor than the S9+ for the bestone-handed phone rightnow. Little $T$
+expensive
+Negative
+The Samsung Galaxy Z Flip 5 is an excellent Android phone with a big $T$ that easily fits in your pocket thanks to its folding formfactor.
+screen
+Positive
+The Samsung Galaxy Z Fold 5 is a foldable $T$ doneright, with asleeker, lighter build than previousmodels, loads of power and genuinely useful continuity between its twoscreens.
+phone
+Positive
+The Samsung Galaxy Z Fold 5 is a foldable phone doneright, with a $T$ lighter build than previousmodels, loads of power and genuinely useful continuity between its twoscreens.
+sleeker
+Positive
+The Samsung Galaxy Z Fold 5 is a foldable phone doneright, with asleeker, $T$ than previousmodels, loads of and genuinely useful continuity between its twoscreens.
+lighter build
+Positive
+There's nothing radically new aboutit, but the Samsung Galaxy S7 delivers the best Android smartphone $T$ in a relatively small package
+performance
+Positive
+There's nothing radically new aboutit, but the Samsung Galaxy S7 delivers the best Android smartphone performance in a relatively $T$ package
+small
+Positive
+TicWatch Pro 3 Ultra has a long $T$life,dual-layerdisplay, good health and fitnesstracking. Limited features
+battery
+Positive
+TicWatch Pro 3 Ultra has a long batterylife,dual-layer $T$ good health and fitnesstracking. Limited features
+display
+Positive
+TicWatch Pro 3 Ultra has a long batterylife,dual-layerdisplay, good health and fitnesstracking. Limited $T$
+features
+Negative
+The Samsung Galaxy J7 is an $T$ midrange phablet on Boost Mobile that offers good bang for the buck compared withrivals.
+affordable
+Positive
+The Samsung Galaxy Note 20 Ultra delivers the most $T$ experience money canbuy. It has the most versatilebig-screen phoneyet. Comes with the Dynamic largedisplay, smoothperformance, good battery life and camera but only for those who hasmoney.
+high-end phone
+Positive
+The Samsung Galaxy Note 20 Ultra delivers the mosthigh-end phone experience money canbuy. It has the most versatile $T$ phoneyet. Comes with the Dynamic largedisplay, smoothperformance, good battery life and camera but only for those who hasmoney.
+big-screen
+Positive
+The Samsung Galaxy Note 20 Ultra delivers the mosthigh-end phone experience money canbuy. It has the most versatilebig-screen phoneyet. Comes with the Dynamic large $T$ smoothperformance, good battery life and camera but only for those who hasmoney.
+display
+Positive
+The Samsung Galaxy Note 20 Ultra delivers the mosthigh-end phone experience money canbuy. It has the most versatilebig-screen phoneyet. Comes with the Dynamic largedisplay, smooth $T$ good battery life and camera but only for those who hasmoney.
+performance
+Positive
+The Samsung Galaxy Note 20 Ultra delivers the mosthigh-end phone experience money canbuy. It has the most versatilebig-screen phoneyet. Comes with the Dynamic largedisplay, smoothperformance, good $T$ life and camera but only for those who hasmoney.
+battery
+Positive
+The Samsung Galaxy Note 20 Ultra delivers the mosthigh-end phone experience money canbuy. It has the most versatilebig-screen phoneyet. Comes with the Dynamic largedisplay, smoothperformance, good battery life and $T$ but only for those who hasmoney.
+camera
+Positive
+The Samsung Galaxy Note 20 Ultra delivers the mosthigh-end phone experience money canbuy. It has the most versatilebig-screen phoneyet. Comes with the Dynamic largedisplay, smoothperformance, good battery life and camera but only for those who has $T$
+money
+Negative
+The Samsung Galaxy Note 7 has been recalled and is no longersold. No one should use this phone because of poor $T$
+battery
+Negative
+The Samsung Galaxy Note 9 is an attractivepen-enabled phablet with a fast $T$ a terrific modem and a hugebattery. All comes with heavyprice.
+processor
+Positive
+The Samsung Galaxy Note 9 is an attractivepen-enabled phablet with a fastprocessor, a terrific modem and a huge $T$ All comes with heavyprice.
+battery
+Positive
+The Samsung Galaxy Note 9 is an attractivepen-enabled phablet with a fastprocessor, a terrific modem and a hugebattery. All comes with heavy $T$
+price
+Negative
+The Samsung Galaxy S10+ is ahigh-cost 4G phone at the beginning of the 5Gera.It'sexcellent, but you can get almost the same $T$ elsewhere for much lessmoney.
+performance
+Positive
+The Samsung Galaxy S10+ is ahigh-cost 4G phone at the beginning of the 5Gera.It'sexcellent, but you can get almost the same performance elsewhere for much less $T$
+money
+Negative
+The Samsung Galaxy S20 FE 5G delivers all the phone $T$ most people need at a price more people canafford.
+performance
+Positive
+The Samsung Galaxy S20 FE 5G delivers all the phone performance most people need at a $T$ more people canafford.
+price
+Positive
+The Samsung Galaxy S22 fits comfortably in $T$ and is as powerful as its largersiblings, but its small size makes for less batterylife.
+one hand
+Positive
+The Samsung Galaxy S22 fits comfortably in one hand and is as $T$ as its largersiblings, but its small size makes for less batterylife.
+powerful
+Positive
+The Samsung Galaxy S22 fits comfortably in one hand and is as powerful as its largersiblings, but its small size makes for less $T$life.
+battery
+Negative
+TheApple's 2022 iPad Air is a perfect balance of $T$ andperformance. While battery life could bebetter,it's notbad, sothat's a relatively minorcomplaint. Ifyou're looking for ado-it-all tablet withtop-notchaccessories, this iPad Air is the best choice inApple's tabletlineup.
+features
+Positive
+TheApple's 2022 iPad Air is a perfect balance of features and $T$ While battery life could bebetter,it's notbad, sothat's a relatively minorcomplaint. Ifyou're looking for ado-it-all tablet withtop-notchaccessories, this iPad Air is the best choice inApple's tabletlineup.
+performance
+Positive
+TheApple's 2022 iPad Air is a perfect balance of features andperformance. While $T$ life could bebetter,it's notbad, sothat's a relatively minorcomplaint. Ifyou're looking for ado-it-all tablet withtop-notchaccessories, this iPad Air is the best choice inApple's tabletlineup.
+battery
+Negative
+Apple's10th-generation iPad remains the best tablet for most people because of appealing $T$ high quality cameras andperformance. Drawbacks are high price, no touch-ID Button andFace-ID.
+design
+Positive
+Apple's10th-generation iPad remains the best tablet for most people because of appealingdesign, high quality $T$ andperformance. Drawbacks are high price, no touch-ID Button andFace-ID.
+cameras
+Positive
+Apple's10th-generation iPad remains the best tablet for most people because of appealingdesign, high quality cameras and $T$ Drawbacks are high price, no touch-ID Button andFace-ID.
+performance
+Positive
+Apple's10th-generation iPad remains the best tablet for most people because of appealingdesign, high quality cameras andperformance. Drawbacks are high $T$, no touch-ID Button andFace-ID.
+price
+Negative
+Apple's10th-generation iPad remains the best tablet for most people because of appealingdesign, high quality cameras andperformance. Drawbacks are high price, no $T$ Button and Face-ID.
+touch-ID
+Negative
+Apple's10th-generation iPad remains the best tablet for most people because of appealingdesign, high quality cameras andperformance. Drawbacks are high price, no touch-ID Button and $T$
+Face-ID
+Negative
+The iPad Mini offers $T$ performance and batterylife. Higher price than previous models and no multi user options inIpadOS.
+portability
+Positive
+The iPad Mini offersportability,excellent $T$ and batterylife. Higher price than previous models and no multi user options inIpadOS.
+performance
+Positive
+The iPad Mini offersportability,excellent performance and $T$life. Higher price than previous models and no multi user options inIpadOS.
+battery
+Positive
+The iPad Mini offersportability,excellent performance and batterylife. Higher $T$ than previous models and no multi user options inIpadOS.
+price
+Negative
+The iPad Mini offersportability,excellent performance and batterylife. Higher price than previous models and no $T$ options inIpadOS.
+multi user
+Negative
+Even without the Google Playstore, Amazon Fire HD 10 is the best tablet you can get forless than $200. Fast $T$ for the price,Plenty ofRAM, Acts as an Alexa smartdisplay. Cons are Poor app selection Very Amazon-
+processor
+Positive
+Even without the Google Playstore, Amazon Fire HD 10 is the best tablet you can get forless than $200. Fast processor for the $T$,Plenty ofRAM, Acts as an Alexa smartdisplay. Cons are Poor app selection Very Amazon-centere
+price
+Positive
+Even without the Google Playstore, Amazon Fire HD 10 is the best tablet you can get forless than $200. Fast processor for the price,Plenty of $T$ Acts as an Alexa smartdisplay. Cons are Poor app selection Very Amazon-centric Interface.
+RAM
+Positive
+Even without the Google Playstore, Amazon Fire HD 10 is the best tablet you can get forless than $200. Fast processor for the price,Plenty ofRAM, Acts as an Alexa smart $T$ Cons are Poor app selection Very Amazon--centric Interface
+display
+Positive
+Even without the Google Playstore, Amazon Fire HD 10 is the best tablet you can get forless than $200. Fast processor for the price,Plenty ofRAM, Acts as an Alexa smartdisplay. Cons are Poor $T$ selection Very Amazon-centric Interface
+app
+Negative
+Apple's iPhone 14 Plus gets you a large $T$ and similarly long battery life to the iPhone Pro Max for two hundred dollarsless.
+display
+Positive
+Apple's iPhone 14 Plus gets you a large display and similarly long $T$ life to the iPhone Pro Max for two hundred dollarsless.
+battery
+Positive
+Apple's iPhone 14 Plus gets you a large display and similarly long battery life to the iPhone Pro Max for two hundred $T$less.
+dollars
+Positive
+Apple's iPhone 14 Pro offers a number of welcome upgrades over the standard model while being smaller and easier to handle than the ProMax, but its $T$doesn't last aslong.
+battery
+Negative
+Apple's iPhone 7 has sleek and compact $T$ with goodbuild-quality. It was expensive when released and battery was notgreat.
+size
+Positive
+Apple's iPhone 7 has sleek and compact size with good $T$ It was expensive when released and battery was notgreat.
+build-quality
+Positive
+Apple's iPhone 7 has sleek and compact size with goodbuild-quality. It was $T$ when released and battery was notgreat.
+expensive
+Negative
+Apple's iPhone 7 has sleek and compact size with goodbuild-quality. It was expensive when released and $T$ was notgreat.
+battery
+Negative
+As long as $T$ is noobject, the Samsung Galaxy Note 5 is the most powerful phablet you can buy onAT&T.
+price
+Negative
+As long as price is noobject, the Samsung Galaxy Note 5 is the most $T$ phablet you can buy onAT&T.
+powerful
+Positive
+Dell Alienware x15 R2 comes with powerful $T$ dedicatedgraphics card, customizabledesign. It has poor battery life plusheavy.
+performance
+Positive
+Dell Alienware x15 R2 comes with powerfulperformance, dedicated $T$ customizabledesign. It has poor battery life plusheavy.
+graphics card
+Positive
+Dell Alienware x15 R2 comes with powerfulperformance, dedicatedgraphics card, customizable $T$ It has poor battery life plusheavy.
+design
+Positive
+Dell Alienware x15 R2 comes with powerfulperformance, dedicatedgraphics card, customizabledesign. It has poor $T$ life plusheavy.
+battery
+Negative
+Dell Alienware x15 R2 comes with powerfulperformance, dedicatedgraphics card, customizabledesign. It has poor battery life plus $T$
+heavy
+Negative
+The midsize Samsung Galaxy S10 has all the attractive $T$ of the S10+ for lessmoney, but we still think the smaller S10e is a better buy because battery is not good
+features
+Positive
+The midsize Samsung Galaxy S10 has all the attractive features of the S10+ for less $T$ but we still think the smaller S10e is a better buy because battery is not good
+money
+Negative
+The midsize Samsung Galaxy S10 has all the attractive features of the S10+ for lessmoney, but we still think the smaller S10e is a better buy because $T$ is not good
+battery
+Negative
+The pricey iPhone 11 Pro and 11 Pro Max bring more $T$ longer batterylife, and better LTE capabilities toApple's flagship phoneline.
+cameras
+Positive
+The pricey iPhone 11 Pro and 11 Pro Max bring morecameras, longer $T$life, and better LTE capabilities toApple's flagship phoneline.
+battery
+Positive
+The S23+ has the most mainstream appeal inSamsung's Galaxy phonelineup, with many of the same features as the S23 Ultra in a more comfortable $T$ for a couple of hundred dollarsless.
+size
+Positive
+The S23+ has the most mainstream appeal inSamsung's Galaxy phonelineup, with many of the same features as the S23 Ultra in a more comfortable size for a couple of hundred $T$less.
+dollars
+Positive
+The Samsung Galaxy A01 has charming $T$ vividdisplay, and solid battery life going forit, butit's not enough to make up for a lagging processor and nearly nonexistentstorage.
+design
+Positive
+The Samsung Galaxy A01 has charmingdesign, vivid $T$ and solid battery life going forit, butit's not enough to make up for a lagging processor and nearly nonexistentstorage.
+display
+Positive
+The Samsung Galaxy A01 has charmingdesign, vividdisplay, and solid $T$ life going forit, butit's not enough to make up for a lagging processor and nearly nonexistentstorage.
+battery
+Positive
+The Samsung Galaxy A01 has charmingdesign, vividdisplay, and solid battery life going forit, butit's not enough to make up for a lagging $T$ and nearly nonexistentstorage.
+processor
+Negative
+The Samsung Galaxy A01 has charmingdesign, vividdisplay, and solid battery life going forit, butit's not enough to make up for a lagging processor and nearly nonexistent $T$
+storage
+Negative

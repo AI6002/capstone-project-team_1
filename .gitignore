@@ -130,6 +130,7 @@ venv.bak/
 
 # Other folders
 node_modules/
+mlmodel/pyabsa/checkpoints/
 
 # Other files
 WebScraper/scraped_data.txt
