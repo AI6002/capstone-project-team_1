@@ -1,9 +1,20 @@
-const url = 'https://www.amazon.com/Sennheiser-Open-Back-Professional-Headphone/dp/B00004SY4H'
+//testurl = 'https://www.amazon.com/Sennheiser-Open-Back-Professional-Headphone/dp/B00004SY4H'
+//To run this script, type the following command in the terminal:
+//node web-scraper.js <testurl>
 const puppeteer = require('puppeteer');
 const fs = require('fs'); // Import the file system module
-const numOfReviews = 10;
+const numOfReviews = 3;//10;
 let reviewCount = 2;
 (async () => {
+
+  // Check if the user provided a URL as a command-line argument
+  if (process.argv.length !== 3) {
+    console.error('Usage: node script.js <URL>');
+    return;
+  }
+
+  const url = process.argv[2]; // Get the URL from the command-line argument
+
   // Launch a headless browser
   const browser = await puppeteer.launch();
 
@@ -27,8 +38,15 @@ let reviewCount = 2;
         let content = '';
 
         if (reviewBody) {
+
           const translatedContent = reviewBody.querySelector('span.cr-translated-review-content');
-          content = translatedContent ? translatedContent.textContent : reviewBody.textContent;
+          if (translatedContent)
+            content = translatedContent.textContent;
+          else {
+            const innerSpans = reviewBody.querySelectorAll('span:not([data-hook])'); // Select all inner spans without attributes
+            const lastInnerSpan = innerSpans ? innerSpans[innerSpans.length - 1] : null; // Select the last inner span
+            content = lastInnerSpan ? lastInnerSpan.textContent : '';
+          }
           content = content.replace(/\n/g, ' ').trim("\"");
         }
 
@@ -84,11 +102,11 @@ let reviewCount = 2;
   // Close the browser
   await browser.close();
 
-   // Save the scraped data to a text file
-   fs.writeFileSync('scraped_data.txt', scrapedData.join('\n'), 'utf-8', (err) => {
+  // Save the scraped data to a text file
+  fs.writeFileSync('scraped_data.txt', scrapedData.join('\n'), 'utf-8', (err) => {
     if (err) {
       console.error('Error writing to file:', err);
-    } 
+    }
   });
 
   console.log('Scraped data saved to scraped_data.txt');
