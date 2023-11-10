@@ -11,6 +11,7 @@ root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 # Add the root directory to the Python path
 sys.path.append(root_dir)
 from MLModel.preprocessing import Preprocess
+from MLModel.PyABSA.extract_aspects import extract_aspects_and_sentiments
 
 class Data(BaseModel):
     url: str
@@ -27,39 +28,8 @@ async def analyze(data: Data):
     # Extract sentences from the scraped data
     await extract_sentences()
 
-    # load data from a text file line by line in a list
-    data_to_analyze = []
-    with open("mlmodel/data/scraped_data.txt", 'r', encoding='utf-8') as f:
-        for line in f:
-            data_to_analyze.append(line)
-
-    inference_source = data_to_analyze
-
-    # Load the model
-    aspect_extractor = ATEPCCheckpointManager.get_aspect_extractor(
-    checkpoint="MLModel/PyABSA/checkpoints/finetuned_model",
-    auto_device=True,  # False means load model on CPU
-    cal_perplexity=True,
-    )
+    return await extract_aspects_and_sentiments("MLModel/data/scraped_data.txt","MLModel/PyABSA/checkpoints/finetuned_model")
     
-    # Predict
-    atepc_result = aspect_extractor.extract_aspect(
-    inference_source=inference_source, 
-    save_result=True,
-    print_result=True,  # print the result
-    pred_sentiment=True,  # Predict the sentiment of extracted aspect terms
-    )
-    
-    result=[]
-    for example in atepc_result:
-        aspect_sentiment_pairs = {
-        'aspects': example['aspect'],
-        'sentiments': example['sentiment']
-        }
-        result.append(aspect_sentiment_pairs)
-
-    #return jsonify(result)
-    return result
 
 async def scrape(url: str):
     # Define the command to run the Node.js script
