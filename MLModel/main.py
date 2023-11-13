@@ -1,7 +1,9 @@
+import torch
 import sys
 from preprocessing import Preprocess
 from aspect_mapping import map_reviews_to_synonyms
 from feature_sentiment_analysis import analyze_feature_sentiments
+from PyABSA.extract_aspects import extract_aspects_from_file
 
 
 def review_analysis(input_file_path, output_file_path):
@@ -31,21 +33,13 @@ def review_analysis(input_file_path, output_file_path):
         print("No reviews were loaded. Exiting the program.")
         sys.exit(0)
 
-    # TODO: add training and fine tuning
+    # TODO: Resolve the memory issue to work with output_file_path
+    # Call the function from the aspect_extraction module
+    file_path = "./MLModel/data/sample_scraped_data_linebyline.txt"
+    reviews = extract_aspects_from_file(file_path)
 
-    reviews = [
-        (['camera', 'performance', 'battery life'], ['Positive', 'Positive', 'Negative']),
-        (['photos', 'Android experience', 'battery'], ['Positive', 'Positive', 'Negative']),
-        (['price', 'performance', 'OxygenOS', 'camera quality', 'features'],
-         ['Positive', 'Positive', 'Positive', 'Negative', 'Negative']),
-        (['camera system', 'Google services'], ['Positive', 'Negative']),
-        (['design', 'processing power'], ['Positive', 'Negative']),
-        (['performance', 'portability'], ['Positive', 'Positive']),
-        (['display', 'media consumption', 'productivity', 'price'], ['Positive', 'Positive', 'Positive', 'Neutral']),
-        (['use', 'performance', 'applications'], ['Positive', 'Negative', 'Neutral']),
-        (['display', 'keyboard', 'stylus'], ['Positive', 'Negative', 'Negative']),
-        (['processing power'], ['Negative'])
-    ]
+    # Clear GPU memory
+    torch.cuda.empty_cache()
 
     # Call the function from the aspect_mapping module
     mapped_reviews = map_reviews_to_synonyms(reviews)
