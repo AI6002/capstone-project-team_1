@@ -77,4 +77,9 @@ def analyze_feature_sentiments(mapped_reviews):
     aspect_scores = calculate_aspect_scores(aspect_sentiment_counts)
     best_features, worst_features = find_best_and_worst_features(aspect_scores)
 
-    return best_features, worst_features
+    best_and_worst_features = {
+        'bestFeature': best_features,
+        'worstFeature': worst_features
+    }
+
+    return best_and_worst_features
