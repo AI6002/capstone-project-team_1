@@ -1,3 +1,4 @@
+import asyncio
 import torch
 import sys
 from preprocessing import Preprocess
@@ -6,7 +7,7 @@ from feature_sentiment_analysis import analyze_feature_sentiments
 from PyABSA.extract_aspects import extract_aspects_from_file
 
 
-def review_analysis(input_file_path, output_file_path):
+async def review_analysis(input_file_path, output_file_path):
     """
     Analyze the opinions toward the product based on a DataFrame of reviews.
 
@@ -53,7 +54,11 @@ def review_analysis(input_file_path, output_file_path):
     print(best_and_worst_features)
 
 
-if __name__ == "__main__":
+async def main():
     input_file_path = './MLModel/data/scraped_data.txt'
     output_file_path = './MLModel/data/review_sentences.txt'
-    review_analysis(input_file_path, output_file_path)
+    await review_analysis(input_file_path, output_file_path)
+
+if __name__ == "__main__":
+    loop = asyncio.get_event_loop()
+    loop.run_until_complete(main())
