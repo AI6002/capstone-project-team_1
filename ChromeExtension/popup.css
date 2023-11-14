@@ -1,0 +1,38 @@
+body {
+  width: 250px;
+}
+
+#product-info {
+  text-align: center;
+}
+
+#product-image {
+  max-width: 60%;
+  height: auto;
+}
+
+#product-name {
+  font-size: 12px;
+  text-align: justify;
+}
+
+#analyze-button {
+  width: 100%;
+  margin-top: 10px;
+}
+
+#analysis-result {
+  display: none;
+  margin-top: 10px;
+}
+
+#loading-indicator {
+  text-align: center;
+  background-color: #fcfcfd;
+}
+
+.loading-image{
+  width: 120px;
+  text-align: center;
+  height: 60px;
+}
