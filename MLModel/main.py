@@ -1,21 +1,22 @@
 import asyncio
 import torch
 import sys
-from preprocessing import Preprocess
-from aspect_mapping import map_reviews_to_synonyms
-from feature_sentiment_analysis import analyze_feature_sentiments
-from PyABSA.extract_aspects import extract_aspects_from_file
+from MLModel.preprocessing import Preprocess
+from MLModel.aspect_mapping import map_reviews_to_synonyms
+from MLModel.feature_sentiment_analysis import analyze_feature_sentiments
+from MLModel.PyABSA.extract_aspects import extract_aspects_from_file
 
 
-async def review_analysis(input_file_path, output_file_path):
+async def review_analysis(input_file_path):
     """
     Analyze the opinions toward the product based on a DataFrame of reviews.
 
     Args:
         input_file_path (str): Path to the input file containing reviews.
-        output_file_path (str): Path to the output file for processed reviews.
     """
 
+    # Path to the output file for processed reviews
+    output_file_path="./MLModel/data/review_sentences.txt"
     prep = Preprocess()
     try:
         prep.extract_sentences(input_file_path, output_file_path)
@@ -36,8 +37,8 @@ async def review_analysis(input_file_path, output_file_path):
 
     # TODO: Resolve the memory issue to work with output_file_path
     # Call the function from the aspect_extraction module
-    file_path = "./MLModel/data/sample_scraped_data_linebyline.txt"
-    reviews = extract_aspects_from_file(file_path)
+    #file_path = "./MLModel/data/sample_scraped_data_linebyline.txt"
+    reviews = extract_aspects_from_file(output_file_path)
 
     # Clear GPU memory
     torch.cuda.empty_cache()
@@ -52,13 +53,14 @@ async def review_analysis(input_file_path, output_file_path):
     best_and_worst_features = analyze_feature_sentiments(mapped_reviews)
 
     print(best_and_worst_features)
+    
+    return best_and_worst_features
 
 
-async def main():
-    input_file_path = './MLModel/data/scraped_data.txt'
-    output_file_path = './MLModel/data/review_sentences.txt'
-    await review_analysis(input_file_path, output_file_path)
+async def sentiment_analysis(input_file_path):
+    return await review_analysis(input_file_path)
 
 if __name__ == "__main__":
     loop = asyncio.get_event_loop()
-    loop.run_until_complete(main())
+    input_file_path = './MLModel/data/scraped_data.txt'
+    loop.run_until_complete(sentiment_analysis(input_file_path))

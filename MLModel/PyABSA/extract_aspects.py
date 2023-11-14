@@ -9,7 +9,7 @@ def extract_aspects_from_file(file_path):
     )
 
     scraped_data = []
-    with open(file_path, 'r') as f:
+    with open(file_path, 'r', encoding='utf-8') as f:
         for line in f:
             scraped_data.append(line.strip())  # Assuming each line is a separate piece of text
 
