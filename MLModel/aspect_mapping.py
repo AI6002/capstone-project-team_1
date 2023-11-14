@@ -35,13 +35,9 @@ def find_closest_word(word, synonym_list, threshold_percent=0.6):
     closest_word = None
     min_distance = float('inf')
     max_edit_distance = threshold_percent * len(word)  # Calculate the maximum allowed edit distance
-    print(max_edit_distance)
-    print(word)
 
     for stored_word, _ in synonym_list:  # Iterate through the words in the Trie
-        print(stored_word)
         distance = Levenshtein.distance(word, stored_word)
-        print(distance)
         if distance <= max_edit_distance:
             if distance < min_distance:
                 closest_word = stored_word
