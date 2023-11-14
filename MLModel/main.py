@@ -48,13 +48,9 @@ def review_analysis(input_file_path, output_file_path):
     print(mapped_reviews)
 
     # Assuming you have already defined 'mapped_reviews' using the 'map_reviews_to_synonyms' function
-    best_features, worst_features = analyze_feature_sentiments(mapped_reviews)
+    best_and_worst_features = analyze_feature_sentiments(mapped_reviews)
 
-    print("Best Features:")
-    print(best_features)
-
-    print("\nWorst Features:")
-    print(worst_features)
+    print(best_and_worst_features)
 
 
 if __name__ == "__main__":
