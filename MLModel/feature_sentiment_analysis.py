@@ -76,10 +76,20 @@ def analyze_feature_sentiments(mapped_reviews):
     aspect_sentiment_counts = group_reviews(mapped_reviews)
     aspect_scores = calculate_aspect_scores(aspect_sentiment_counts)
     best_features, worst_features = find_best_and_worst_features(aspect_scores)
+    
+     # Check if the lists are not null, not none, and not empty
+    best_feature_str = ', '.join(filter(None, best_features)) if best_features else None
+    worst_feature_str = ', '.join(filter(None, worst_features)) if worst_features else None
 
+    # Create the new format dictionary
     best_and_worst_features = {
-        'bestFeature': best_features,
-        'worstFeature': worst_features
+        'bestFeature': best_feature_str,
+        'worstFeature': worst_feature_str
     }
+    
+    # best_and_worst_features = {
+    #     'bestFeature': best_features,
+    #     'worstFeature': worst_features
+    # }
 
     return best_and_worst_features

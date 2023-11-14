@@ -7,16 +7,20 @@ const numOfReviews = 3;//10;
 let reviewCount = 2;
 (async () => {
 
-  // Check if the user provided a URL as a command-line argument
-  if (process.argv.length !== 3) {
-    console.error('Usage: node script.js <URL>');
-    return;
+  // Check if the user provided a URL and output file path as command-line arguments
+  if (process.argv.length !== 4) {
+    console.error('Usage: node web-scraper.js <URL> <outputFilePath>');
+    return 'Usage: node web-scraper.js <URL> <outputFilePath>';
   }
 
   const url = process.argv[2]; // Get the URL from the command-line argument
+  const outputFilePath = process.argv[3]; // Get the output file path from the command-line argument
+
 
   // Launch a headless browser
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({
+    args: ['--no-sandbox']
+  });
 
   // Create a new page
   const page = await browser.newPage();
@@ -88,7 +92,8 @@ let reviewCount = 2;
   const seeAllReviewsLink = await page.$('a[data-hook="see-all-reviews-link-foot"]');
   if (seeAllReviewsLink) {
     await seeAllReviewsLink.click();
-    await page.waitForNavigation();
+    //await page.waitForNavigation();
+    await page.waitForTimeout(5000);
   } else {
     console.error('See all reviews link not found');
     browser.close();
@@ -102,14 +107,17 @@ let reviewCount = 2;
   // Close the browser
   await browser.close();
 
-  // Save the scraped data to a text file
-  fs.writeFileSync('scraped_data.txt', scrapedData.join('\n'), 'utf-8', (err) => {
-    if (err) {
-      console.error('Error writing to file:', err);
-    }
-  });
+  try {
+    // Save the scraped data to a text file
+    fs.writeFileSync(outputFilePath, scrapedData.join('\n'), 'utf-8');
 
-  console.log('Scraped data saved to scraped_data.txt');
+    console.log(`Scraped data saved to ${outputFilePath}`);
+  } catch (err) {
+    console.error('Error writing to file:', err);
+    return "Error writing to file" + err;
+  }
+
+
 
 })();
 
