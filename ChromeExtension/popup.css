@@ -7,16 +7,13 @@ body {
 }
 
 #product-image {
-  max-width: 40%;
+  max-width: 60%;
   height: auto;
-  float: left;
 }
 
 #product-name {
-  font-size: 14px;
-  font-weight: bold;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  font-size: 12px;
+  text-align: justify;
 }
 
 #analyze-button {
@@ -27,4 +24,15 @@ body {
 #analysis-result {
   display: none;
   margin-top: 10px;
+}
+
+#loading-indicator {
+  text-align: center;
+  background-color: #fcfcfd;
+}
+
+.loading-image{
+  width: 120px;
+  text-align: center;
+  height: 60px;
 }
