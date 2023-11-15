@@ -52,19 +52,16 @@ document.addEventListener("DOMContentLoaded", function () {
       const errorMessageElement = document.getElementById("fetch-error-message");
 
       analysisResultElement.style.display = "none";
+      errorMessageElement.style.display = "none";
       // Show loading indicator while fetching results
       loadingIndicator.style.display = "block";
 
-
       // Get the full product URL from the current tab's URL
       const fullProductUrl = currentTab.url;
-
       // Use a regular expression to extract the desired part of the URL
       const match = fullProductUrl.match(/^(https:\/\/www.amazon.com\/(?:[^/]+\/)?(?:dp\/)?[^/?]+)/);
       const productUrl = match ? match[1] : null;
       
-      
-
       document.getElementById("best-feature").textContent =productUrl
       // Make a POST request to the web API
       fetch("http://127.0.0.1:5000/analyze", {
