@@ -60,9 +60,12 @@ document.addEventListener("DOMContentLoaded", function () {
       const fullProductUrl = currentTab.url;
 
       // Use a regular expression to extract the desired part of the URL
-      const match = fullProductUrl.match(/^(https:\/\/www.amazon.com\/[^/]+\/dp\/[^/]+)/);
+      const match = fullProductUrl.match(/^(https:\/\/www.amazon.com\/(?:[^/]+\/)?(?:dp\/)?[^/?]+)/);
       const productUrl = match ? match[1] : null;
+      
+      
 
+      document.getElementById("best-feature").textContent =productUrl
       // Make a POST request to the web API
       fetch("http://127.0.0.1:5000/analyze", {
         method: "POST",
