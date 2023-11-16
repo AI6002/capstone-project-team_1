@@ -42,8 +42,9 @@ async def review_analysis(input_file_path, output_file_path):
     # Clear GPU memory
     torch.cuda.empty_cache()
 
+    # TODO: Get the type of the product and pass it to the aspect mapping function
     # Call the function from the aspect_mapping module
-    mapped_reviews = map_reviews_to_synonyms(reviews)
+    mapped_reviews = map_reviews_to_synonyms(reviews, "laptop")
 
     # Now you can work with the mapped_reviews
     print(mapped_reviews)
