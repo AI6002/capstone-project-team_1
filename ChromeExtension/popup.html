@@ -7,9 +7,9 @@
 </head>
 
 <body>
-  <div id="product-info">
-    <img id="product-image" src="">
-    <h2 id="product-name"></h2>
+  <div id="product-info" style="text-align: center;">
+    <img id="product-image" src="" style="display: block; margin: 0 auto;">
+    <h2 id="product-name" style="margin-top: 10px;"></h2>
   </div>
   <p id="errorMessage" style="display: none;">
     <img src="icons/exclamation.png" style="width: 12px;"> I cannot analyze this URL.
@@ -19,9 +19,24 @@
 
   <button id="analyze-button">Analyze</button>
   <div id="analysis-result">
-    <p><strong>Best Feature:</strong> <span id="best-feature"></span></p>
-    <p><strong>Worst Feature:</strong> <span id="worst-feature"></span></p>
+    <p>
+      <img src="icons/best.png" style="width: 16px;vertical-align: middle;">
+      <strong style="vertical-align: middle;">Best Feature:</strong> 
+      <span id="best-feature" style="vertical-align: middle;"></span>
+    </p>
+    <p>
+      <img src="icons/worst.png" style="width: 16px;vertical-align: middle;">
+      <strong style="vertical-align: middle;">Worst Feature:</strong> 
+      <span id="worst-feature" style="vertical-align: middle;"></span>
+    </p>
   </div>
+  <div id="loading-indicator" style="display: none;">
+    <img src="icons/loading.gif" alt="Loading..." class="loading-image" >
+    <!-- <p>Loading...</p> -->
+  </div>
+  <p id="fetch-error-message" style="display: none;">
+    <img src="icons/exclamation.png" style="width: 12px;">
+  </p>
   <script type="module" src="popup.js"></script>
 </body>
 
