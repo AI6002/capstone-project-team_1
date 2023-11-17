@@ -15,6 +15,7 @@ from pyabsa.functional import ABSADatasetList
 from pyabsa.functional import ATEPCConfigManager
 from pyabsa import available_checkpoints
 from pyabsa import ATEPCCheckpointManager
+from pyabsa.functional.dataset.dataset_manager import DatasetItem
 
 checkpoint_map = available_checkpoints('atepc')
 
@@ -23,7 +24,7 @@ config.model = ATEPCModelList.FAST_LCF_ATEPC
 config.evaluate_begin = 4 #0
 config.log_step = -1
 config.batch_size = 16
-config.num_epoch = 2
+config.num_epoch = 40
 config.max_seq_len = 128
 config.cache_dataset = False
 config.use_bert_spc = True
@@ -31,8 +32,8 @@ config.l2reg = 1e-5
 config.learning_rate = 1e-5
 multilingual = ABSADatasetList.English
 config.pretrained_bert = "yangheng/deberta-v3-base-absa-v1.1"
-Dataset = '100.electronics'
-
+#Dataset = '100.electronics'
+Dataset = DatasetItem("100.electronics", ["113.laptop14"])
 checkpoint_path = ATEPCCheckpointManager.get_checkpoint(checkpoint='english')
 aspect_extractor = ATEPCTrainer(
     config=config,
