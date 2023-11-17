@@ -1,6 +1,10 @@
 import asyncio
 import torch
-import sys
+import sys, os
+# Navigate to the root directory by going up one level (../)
+root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+# Add the root directory to the Python path
+sys.path.append(root_dir)
 from MLModel.preprocessing import Preprocess
 from MLModel.aspect_mapping import map_reviews_to_synonyms
 from MLModel.feature_sentiment_analysis import analyze_feature_sentiments

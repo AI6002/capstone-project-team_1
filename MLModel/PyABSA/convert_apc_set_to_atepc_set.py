@@ -9,5 +9,5 @@ from pyabsa.utils.file_utils import convert_apc_set_to_atepc_set
 from pyabsa.functional import ABSADatasetList
 
 convert_apc_set_to_atepc_set(
-    "integrated_datasets/apc_datasets/100.electronics",
+    "MLModel/PyABSA/integrated_datasets/apc_datasets/600.electronics600",
 )  # for custom datasets, absolute path recommended for this function
