@@ -38,7 +38,7 @@ class Trie:
         return node.mapping
 
 
-def find_closest_word(word, synonym_list, threshold_percent=0.1):
+def find_closest_word(word, synonym_list, threshold_percent=0.2):
     # Apply Lancaster stemming
     stemmed_word = lancaster_stemmer.stem(word)
 
@@ -56,7 +56,7 @@ def find_closest_word(word, synonym_list, threshold_percent=0.1):
                 closest_word = stored_word
                 min_distance = distance
 
-    return closest_word
+    return closest_word, min_distance
 
 
 def map_reviews_to_synonyms(reviews, product_type):
@@ -94,6 +94,8 @@ def map_reviews_to_synonyms(reviews, product_type):
         ("memory", "Performance"),
         ("consumption", "Performance"),
         ("storage", "Performance"),
+        ("fan", "Performance"),
+        ("speed", "Performance"),
         ("battery", "Battery"),
         ("charge", "Battery"),
         ("display", "Display"),
@@ -105,6 +107,8 @@ def map_reviews_to_synonyms(reviews, product_type):
         ("versatile", "Range of Features"),
         ("feature", "Range of Features"),
         ("port", "Connectivity"),
+        ("wifi", "Connectivity"),
+        ("wi-fi", "Connectivity"),
         ("connectivity", "Connectivity"),
         ("design", "Design"),
         ("style", "Design"),
@@ -123,6 +127,7 @@ def map_reviews_to_synonyms(reviews, product_type):
         ("sturdy", "Build Quality"),
         ("rug", "Build Quality"),
         ("tough", "Build Quality"),
+        ("material", "Build Quality"),
         ("secure", "Security"),
         # ("camera cover", "security"),
         ("fingerprint", "Security"),
@@ -132,7 +137,7 @@ def map_reviews_to_synonyms(reviews, product_type):
         ("authenticate", "Security"),
         ("portable", "Portability"),
         ("lightweight", "Portability"),
-        ("easy to carry", "Portability"),
+        ("carry", "Portability"),
         ("bulky", "Portability"),
         ("heavy", "Portability"),
         ("weight", "Portability"),
@@ -149,6 +154,7 @@ def map_reviews_to_synonyms(reviews, product_type):
         ("Amp / DAC", "Speaker"),
         ("Amp", "Speaker"),
         ("DAC", "Speaker"),
+        ("speaker", "Speaker"),
         ("microphone", "Microphone"),
         ("mic", "Microphone")
     ]
@@ -216,6 +222,7 @@ def map_reviews_to_synonyms(reviews, product_type):
         ("sturdy", "Build Quality"),
         ("rug", "Build Quality"),
         ("tough", "Build Quality"),
+        ("material", "Build Quality"),
         ("secure", "Security"),
         # ("camera cover", "security"),
         ("fingerprint", "Security"),
@@ -242,6 +249,7 @@ def map_reviews_to_synonyms(reviews, product_type):
         ("music", "Speaker"),
         ("vocal", "Speaker"),
         ("Amp / DAC", "Speaker"),
+        ("speaker", "Speaker"),
         ("microphone", "Microphone"),
         ("mic", "Microphone")
     ]
@@ -312,6 +320,7 @@ def map_reviews_to_synonyms(reviews, product_type):
         ("sturdy", "Build Quality"),
         ("rug", "Build Quality"),
         ("tough", "Build Quality"),
+        ("material", "Build Quality"),
         ("secure", "Security"),
         # ("camera cover", "security"),
         ("size", "Size"),
@@ -325,6 +334,7 @@ def map_reviews_to_synonyms(reviews, product_type):
         ("music", "Speaker"),
         ("vocal", "Speaker"),
         ("Amp / DAC", "Speaker"),
+        ("speaker", "Speaker"),
         ("microphone", "Microphone"),
         ("mic", "Microphone")
     ]
@@ -369,6 +379,7 @@ def map_reviews_to_synonyms(reviews, product_type):
         ("sturdy", "Build Quality"),
         ("rug", "Build Quality"),
         ("tough", "Build Quality"),
+        ("material", "Build Quality"),
         ("secure", "Security"),
         ("portable", "Portability"),
         ("lightweight", "Portability"),
@@ -415,10 +426,26 @@ def map_reviews_to_synonyms(reviews, product_type):
     for aspect_list, sentiment_list in reviews:
         mapped_aspects = []
         for aspect in aspect_list:
-            closest_word = find_closest_word(aspect, synonym_words)
-            mapping = [mapping for word, mapping in synonym_words if word == closest_word]
-            if mapping:
-                mapped_aspects.append(mapping[0])
+            # Tokenize the aspect into words
+            aspect_words = aspect.split()
+            mapped_aspect_words = []
+
+            min_distance = float('inf')
+            for word in aspect_words:
+
+                closest_word, distance = find_closest_word(word, synonym_words)
+                mapping = [mapping for w, mapping in synonym_words if w == closest_word]
+                if mapping:
+                    if distance < min_distance:
+                        min_distance = distance
+                        mapped_aspect_words.append(mapping[0])
+                # else:
+                    # If no mapping found, keep the original word
+                    # mapped_aspect_words.append(word)
+
+            # Join the mapped words back into a phrase
+            mapped_aspect = " ".join(mapped_aspect_words)
+            mapped_aspects.append(mapped_aspect)
 
         mapped_sentiments = sentiment_list
         mapped_reviews.append((mapped_aspects, mapped_sentiments))
