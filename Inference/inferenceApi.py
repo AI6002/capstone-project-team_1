@@ -28,16 +28,22 @@ app.add_middleware(
 scraped_data_path="./MLModel/data/scraped_data.txt"
 @app.post("/analyze/")
 async def analyze(data: Data):
-    result =await scrape(data.url)
-    if "success" not in result or not result["success"]:
-        return "File saving or scraping operation failed. "+result["error"]
+    print(data.url)
+    try:
+        result =await scrape(data.url)
+        if "success" not in result or not result["success"]:
+            return "File saving or scraping operation failed. "+result["error"]
+            print("File saving or scraping operation failed. "+result["error"])
 
+        
+        print("Scraping completed successfully.")
+        print("Analyzing the scraped data...")
+        # Extract sentences from the scraped data
+        #await extract_sentences()
     
-    
-    # Extract sentences from the scraped data
-    #await extract_sentences()
-   
-    return await sentiment_analysis(scraped_data_path)
+        return await sentiment_analysis(scraped_data_path)
+    except Exception as e:
+        return "An error occurred: "+str(e)
     
     
 

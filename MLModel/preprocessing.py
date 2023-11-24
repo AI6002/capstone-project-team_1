@@ -35,21 +35,47 @@ class Preprocess():
         # Download the punkt tokenizer data if it hasn't already
         nltk.download('punkt')
 
+        max_line_length = 512
+
         # Open the input and output files
         with open(input_file_path, 'r', encoding='utf-8') as input_file, open(output_file_path, 'w',
                                                                               encoding='utf-8') as output_file:
             # Read the content of the input file
             input_text = input_file.read()
-
+            
+            # Extract the first line as the category
+            first_line_break = input_text.find('\n')  # Find the first newline character
+            category = input_text[:first_line_break].strip()  # Extract the first line
+            remaining_text = input_text[first_line_break:].lstrip('\n')  # Remove the first line from the remaining content
+      
             # Tokenize the input text into sentences
-            sentences = sent_tokenize(input_text)
+            sentences = sent_tokenize(remaining_text)
 
-            # Write each sentence to the output file on a new line
+            # Initialize variables to keep track of the current line length
+            current_line = ""
+            current_line_length = 0
+
+            # Iterate through sentences
             for sentence in sentences:
-                output_file.write(sentence + '\n')
+                # Check if adding the current sentence exceeds the maximum line length
+                if len(current_line) + len(sentence) > max_line_length:
+                    # Write the current line to the output file and start a new line
+                    output_file.write(current_line + '\n')
+                    current_line = sentence
+                    current_line_length = len(sentence)
+                else:
+                    # Add the current sentence to the current line
+                    current_line += sentence
+                    current_line_length += len(sentence)
+
+            # Write the remaining content to the output file
+            if current_line:
+                output_file.write(current_line + '\n')
 
         # Notify that the operation is complete
         print("Sentences have been extracted to", output_file_path)
+        
+        return category
 
     def demojize(self, text):
         try:

@@ -1,9 +1,11 @@
 //testurl = 'https://www.amazon.com/Sennheiser-Open-Back-Professional-Headphone/dp/B00004SY4H'
 //To run this script, type the following command in the terminal:
-//node web-scraper.js <testurl>
+//node web-scraper.js <testurl> <outputFilePath>
 const puppeteer = require('puppeteer');
 const fs = require('fs'); // Import the file system module
-const numOfReviews = 3;//10;
+const getCategory = require(__dirname+'/get-category.js');
+const categoriesFilePath = 'MLModel/data/categories.txt';
+const numOfReviews = 10;
 let reviewCount = 2;
 (async () => {
 
@@ -27,7 +29,10 @@ let reviewCount = 2;
 
   const scrapedData = []; // Create an array to store scraped data
 
+  let category = '';
+
   async function scrapePage() {
+
 
     // Click on all <a> elements with data-hook="cr-translate-this-review-link"
     const translateLinks = await page.$$('a[data-hook="cr-translate-these-reviews-link"]');
@@ -85,9 +90,48 @@ let reviewCount = 2;
     }
   }
 
+
+  async function findCategory() {
+    try {
+      // Wait for the product overview div to be present
+      await page.waitForSelector('#productOverview_feature_div');
+
+      // Extract information from spans inside spans with class 'a-span3'
+      const tds = await page.$$('#productOverview_feature_div .a-span3');
+
+      if (!tds || tds.length === 0) {
+        console.error('No elements found with selector #productOverview_feature_div .a-span3');
+        return null; // or handle this case accordingly
+      }
+
+      console.log('Number of elements found:', tds.length);
+
+      let catText = ''; // Initialize catText outside the loop
+
+      for (const td of tds) {
+        const spanContent = await td.$('.a-size-base'); // Use .$
+        const text = spanContent ? await spanContent.evaluate(node => node.textContent.trim()) : '';
+
+        catText += text + ' '; // Concatenate text from each td
+      }
+      
+      // Perform getCategory operation outside of page.$$eval
+      const result = await getCategory.getCategory(categoriesFilePath, catText.trim());
+
+      return result;
+    } catch (error) {
+      console.error('Error in findCategory:', error);
+      throw error;
+    }
+  }
+
   // Navigate to the webpage
   await page.goto(url);
 
+  // Get category name
+  category = await findCategory();
+  console.log("Category: " + category);
+  scrapedData.push(category);
   // Find and click the link with data-hook="see-all-reviews-link-foot"
   const seeAllReviewsLink = await page.$('a[data-hook="see-all-reviews-link-foot"]');
   if (seeAllReviewsLink) {

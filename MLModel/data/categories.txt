@@ -1,0 +1,11 @@
+Brand Model Name Color Form Factor Connectivity Technology
+headphone
+Brand Model Name Screen Size Color Hard Disk Size CPU Model Ram Memory Installed Size Operating System Special Feature Graphics Card Description
+laptop
+Brand Model Name Wireless Carrier Operating System Cellular Technology Memory Storage Capacity Connectivity Technology Color Screen Size Wireless network technology
+phone
+Brand Model Name Style Color Screen Size Special Feature Target Audience Age Range (Description) Compatible Devices Band Material Type
+smartwatch
+Brand Model Name Memory Storage Capacity Screen Size Display Resolution Maximum
+tablet
+

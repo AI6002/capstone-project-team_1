@@ -1,6 +1,10 @@
 import asyncio
 import torch
-import sys
+import sys, os
+# Navigate to the root directory by going up one level (../)
+root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+# Add the root directory to the Python path
+sys.path.append(root_dir)
 from MLModel.preprocessing import Preprocess
 from MLModel.aspect_mapping import map_reviews_to_synonyms
 from MLModel.feature_sentiment_analysis import analyze_feature_sentiments
@@ -17,9 +21,10 @@ async def review_analysis(input_file_path):
 
     # Path to the output file for processed reviews
     output_file_path="./MLModel/data/review_sentences.txt"
+    category="" 
     prep = Preprocess()
     try:
-        prep.extract_sentences(input_file_path, output_file_path)
+        category=prep.extract_sentences(input_file_path, output_file_path)
     except FileNotFoundError as e:
         print(f"Error: {e}. The input file does not exist.")
         sys.exit(1)
