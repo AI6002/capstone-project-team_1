@@ -3,7 +3,7 @@ from pyabsa import ATEPCCheckpointManager
 
 def extract_aspects_from_file(file_path):
     aspect_extractor = ATEPCCheckpointManager.get_aspect_extractor(
-        checkpoint="english",
+        checkpoint="100.electronics",
         auto_device=True,  # False means load model on CPU
         cal_perplexity=True,
     )
