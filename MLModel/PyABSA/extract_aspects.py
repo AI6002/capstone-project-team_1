@@ -5,7 +5,7 @@ def extract_aspects_from_file(file_path):
     aspect_extractor = ATEPCCheckpointManager.get_aspect_extractor(
         #checkpoint="MLModel/PyABSA/finetuned_models/best_model",
         checkpoint="MLModel/PyABSA/finetuned_models/fast_lcf_atepc_600.electronics600_cdw_apcacc_82.63_apcf1_78.08_atef1_78.55",
-        #checkpoint="english",
+        #checkpoint="100.electronics",
         auto_device=True,  # False means load model on CPU
         cal_perplexity=True,
     )

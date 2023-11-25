@@ -32,8 +32,9 @@ def calculate_aspect_scores(aspect_sentiment_counts):
     aspect_scores = {}
 
     for aspect, sentiment_counts in aspect_sentiment_counts.items():
-        score = sentiment_counts['Positive'] - sentiment_counts['Negative']
-        aspect_scores[aspect] = score
+        if aspect != '':
+            score = sentiment_counts['Positive'] - sentiment_counts['Negative']
+            aspect_scores[aspect] = score
 
     return aspect_scores
 
