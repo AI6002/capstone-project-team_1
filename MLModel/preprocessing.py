@@ -42,9 +42,14 @@ class Preprocess():
                                                                               encoding='utf-8') as output_file:
             # Read the content of the input file
             input_text = input_file.read()
-
+            
+            # Extract the first line as the category
+            first_line_break = input_text.find('\n')  # Find the first newline character
+            category = input_text[:first_line_break].strip()  # Extract the first line
+            remaining_text = input_text[first_line_break:].lstrip('\n')  # Remove the first line from the remaining content
+      
             # Tokenize the input text into sentences
-            sentences = sent_tokenize(input_text)
+            sentences = sent_tokenize(remaining_text)
 
             # Initialize variables to keep track of the current line length
             current_line = ""
@@ -69,6 +74,8 @@ class Preprocess():
 
         # Notify that the operation is complete
         print("Sentences have been extracted to", output_file_path)
+        
+        return category
 
     def demojize(self, text):
         try:
