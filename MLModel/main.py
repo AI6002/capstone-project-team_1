@@ -54,13 +54,13 @@ async def review_analysis(input_file_path, evaluation_file_path):
     # Call the function from the aspect_mapping module
     mapped_reviews = map_reviews_to_synonyms(reviews, "laptop")
 
+    # Now you can work with the mapped_reviews
+    print(mapped_reviews)
+
     # Concatenate rows of the evaluation data and get the result as a DataFrame
     concatenated_data = prep.concat_rows_by_length(input_csv_path=evaluation_file_path, max_length=512)
     # Evaluation
     map_and_evaluate(mapped_reviews, concatenated_data)
-
-    # Now you can work with the mapped_reviews
-    print(mapped_reviews)
 
     # Assuming you have already defined 'mapped_reviews' using the 'map_reviews_to_synonyms' function
     best_and_worst_features = analyze_feature_sentiments(mapped_reviews)
