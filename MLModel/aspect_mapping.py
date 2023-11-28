@@ -79,6 +79,7 @@ def map_reviews_to_synonyms(reviews, product_type):
         ("dollar", "Price"),
         ("pay", "Price"),
         ("$", "Price"),
+        ("penny", "Price"),
         ("camera", "Camera"),
         ("photo", "Camera"),
         ("picture", "Camera"),
@@ -99,6 +100,9 @@ def map_reviews_to_synonyms(reviews, product_type):
         ("storage", "Performance"),
         ("fan", "Performance"),
         ("speed", "Performance"),
+        ("cpu", "Performance"),
+        ("gpu", "Performance"),
+        ("graphic", "Performance"),
         ("battery", "Battery"),
         ("charge", "Battery"),
         ("display", "Display"),
@@ -113,6 +117,7 @@ def map_reviews_to_synonyms(reviews, product_type):
         ("wifi", "Connectivity"),
         ("wi-fi", "Connectivity"),
         ("connectivity", "Connectivity"),
+        ("2-in-1", "Connectivity"),
         ("design", "Design"),
         ("style", "Design"),
         ("sleek", "Design"),
@@ -160,7 +165,8 @@ def map_reviews_to_synonyms(reviews, product_type):
         ("speaker", "Speaker"),
         ("audio", "Speaker"),
         ("microphone", "Microphone"),
-        ("mic", "Microphone")
+        ("mic", "Microphone"),
+        ("reliable", "Reliability")
     ]
 
     phone_synonym_words = [
@@ -181,6 +187,7 @@ def map_reviews_to_synonyms(reviews, product_type):
         ("dollar", "Price"),
         ("pay", "Price"),
         ("$", "Price"),
+        ("penny", "Price"),
         ("camera", "Camera"),
         ("photo", "Camera"),
         ("picture", "Camera"),
@@ -198,6 +205,9 @@ def map_reviews_to_synonyms(reviews, product_type):
         ("consumption", "Performance"),
         ("storage", "Performance"),
         ("RAM", "Performance"),
+        ("cpu", "Performance"),
+        ("gpu", "Performance"),
+        ("graphic", "Performance"),
         ("battery", "Battery"),
         ("charge", "Battery"),
         ("display", "Display"),
@@ -210,6 +220,7 @@ def map_reviews_to_synonyms(reviews, product_type):
         ("feature", "Range of Features"),
         ("port", "Connectivity"),
         ("connectivity", "Connectivity"),
+        ("2-in-1", "Connectivity"),
         ("5G", "Connectivity"),
         ("design", "Design"),
         ("style", "Design"),
@@ -257,7 +268,8 @@ def map_reviews_to_synonyms(reviews, product_type):
         ("Amp / DAC", "Speaker"),
         ("speaker", "Speaker"),
         ("microphone", "Microphone"),
-        ("mic", "Microphone")
+        ("mic", "Microphone"),
+        ("reliable", "Reliability")
     ]
 
     smartwatch_synonym_words = [
@@ -276,12 +288,16 @@ def map_reviews_to_synonyms(reviews, product_type):
         ("dollar", "Price"),
         ("pay", "Price"),
         ("$", "Price"),
+        ("penny", "Price"),
         ("camera", "Camera"),
         ("photo", "Camera"),
         ("picture", "Camera"),
         ("photograph", "Camera"),
         ("zoom", "Camera"),
         ("performance", "Performance"),
+        ("cpu", "Performance"),
+        ("gpu", "Performance"),
+        ("graphic", "Performance"),
         ("powerful", "Performance"),
         ("smooth", "Performance"),
         ("slow", "Performance"),
@@ -304,7 +320,9 @@ def map_reviews_to_synonyms(reviews, product_type):
         ("feature", "Range of Features"),
         ("port", "Connectivity"),
         ("connectivity", "Connectivity"),
+        ("2-in-1", "Connectivity"),
         ("fitness tracking", "Fitness Tracking"),
+        ("fitness", "Fitness Tracking"),
         ("health", "Health Monitoring"),
         ("notification", "Notification"),
         ("design", "Design"),
@@ -343,11 +361,15 @@ def map_reviews_to_synonyms(reviews, product_type):
         ("Amp / DAC", "Speaker"),
         ("speaker", "Speaker"),
         ("microphone", "Microphone"),
-        ("mic", "Microphone")
+        ("mic", "Microphone"),
+        ("reliable", "Reliability")
     ]
 
     headphone_synonym_words = [
-        ("comfort", "Comfort"),
+        ("comfort", "Comfortability"),
+        ("comfy", "Comfortability"),
+        ("comfortable", "Comfortability"),
+        ("uncomfortable", "Comfortability"),
         ("price", "Price"),
         ("expensive", "Price"),
         ("cheap", "Price"),
@@ -358,14 +380,17 @@ def map_reviews_to_synonyms(reviews, product_type):
         ("dollar", "Price"),
         ("pay", "Price"),
         ("$", "Price"),
+        ("penny", "Price"),
         ("battery", "Battery"),
         ("charge", "Battery"),
         ("port", "Connectivity"),
         ("wireless", "connectivity"),
         ("bluetooth", "connectivity"),
         ("connectivity", "Connectivity"),
+        ("2-in-1", "Connectivity"),
         ("noise", "Noise Cancellation"),
         ("noise cancellation", "Noise Cancellation"),
+        ("anc", "Noise Cancellation"),
         ("design", "Design"),
         ("style", "Design"),
         ("sleek", "Design"),
@@ -409,11 +434,14 @@ def map_reviews_to_synonyms(reviews, product_type):
         ("sound", "Sound Quality"),
         ("music", "Sound Quality"),
         ("vocal", "Sound Quality"),
+        ("quality", "Sound Quality"),
+        ("audio", "Sound Quality"),
         ("microphone", "Microphone Quality"),
-        ("mic", "Microphone Quality")
+        ("mic", "Microphone Quality"),
+        ("reliable", "Reliability")
     ]
 
-    if product_type == "laptop":
+    if product_type == "laptop" or product_type == "tablet":
         synonym_words = laptop_synonym_words
     elif product_type == "phone":
         synonym_words = phone_synonym_words

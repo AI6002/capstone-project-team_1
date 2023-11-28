@@ -1,14 +1,14 @@
-﻿Review,Best_Features,Worst_Features
+Review,Best_Features,Worst_Features
  Display is not as bright as some competitors of Dell Inspiron 13. ,,Display
 "However, it is affordable . ",Price,
 "Apple MacBook Pro 16-inch has a stunning Liquid Retina XDR display, long battery life, versatile ports. ","Display , Battery , Range of features",
 Drawback is that it is expensive.,,Price
-"Dell Precision 5560 has professional-grade graphics card, durable design. ","Graphic card , Build Quality",
+"Dell Precision 5560 has professional-grade graphics card, durable design. ","Performance , Build Quality",
 Little pricey.,,Price
 Dell Vostro 15 has good business-grade security features and powerful battery. ,"Security, Battery",
 Display not good.,,Display
 "Dell XPS 13 Plus has a futuristic design, powerful performance and a long battery life. ","Design , Performance, Battery",
-It is expensive and limited ports as well.,,"Price , Range of Features"
+It is expensive and limited ports as well.,,"Price , Connectivity"
 "Dell XPS 15 has large and immersive display, powerful performance and a long battery life. ","Design , Performance, Battery",
 Pricey and heavy.,,"Price , Portability "
 Dell XPS Desktop is expensive but stylish in design.,Design ,Price
@@ -18,17 +18,43 @@ Dell XPS Desktop is expensive but stylish in design.,Design ,Price
 But I found it heavy than my previous HP pavilion.,,Portability 
 "HP Envy 16  has a sleek and stylish design, long battery life, sharp display and exceptional performance, comes with heaviness and over budget.","Design , Battery, Display, Performance","Price , Portability "
 "HP Envy All-in-One owns a stylish design, sharp display and good performance. ","Design ,  Display, Performance",
-Expensive and has limited ports.,,"Price , Range of Features"
-"HP Omen 17 keeps a powerful performance, dedicated graphics card, customizable design. ","Graphic card , Performance , Design",
+Expensive and has limited ports.,,"Price , Connectivity"
+"HP Omen 17 keeps a powerful performance, dedicated graphics card, customizable design. ","Performance , Performance , Design",
 Battery does not long last.,,Battery
-"HP Pavilion Aero 13 is a lightweight and portable design, long battery life, affordable price but display is not as bright as some competitors and also has limited ports.","Portability , Design , Battery , Price","Display , Range of features"
+"HP Pavilion Aero 13 is a lightweight and portable design, long battery life, affordable price but display is not as bright as some competitors and also has limited ports.","Portability , Design , Battery , Price","Display , Connectivity"
 "HP Pavilion All-in-One is a nice computer , good performance, amazing display and I would highly recommend this to my friend.","Display, Performance",
-"HP Spectre x360 16 comes long battery life, powerful performance with versatile 2-in-1 design.","Battery life , Performance , Design",
+"HP Spectre x360 16 comes long battery life, powerful performance with versatile 2-in-1 design.","Battery, Performance , Design",
 But highly expensive.,,Price
-"HP Victus 16  has an affordable price, dedicated graphics card, good performance,  Short battery life plus heavy.","Price, Graphic Card, Performance","Battery  , Portability"
+"HP Victus 16  has an affordable price, dedicated graphics card, good performance,  Short battery life plus heavy.","Price, Performance, Performance","Battery  , Portability"
 "Apple MacBook Air (M2) has stunning Liquid Retina display, long battery life and powerful M2 chip but again comes with a high price.","Display , Battery",Price
 Apple MacBook Pro (13-inch) has powerful M2 chip but no touch bar.,Performance,Design
-"Apple MacBook Pro 14-inch has M2 Max chip, long battery life and variety of ports.","Battery , Range of features",
+"Apple MacBook Pro 14-inch has M2 Max chip, long battery life and variety of ports.","Battery , Connectivity",
 It is expensive.,,Price
-"Dell Alienware x15 R2 comes with powerful performance, dedicated graphics card, customizable design. ","Performance , Graphic Card , Design",
+"Dell Alienware x15 R2 comes with powerful performance, dedicated graphics card, customizable design. ","Performance , Performance , Design",
 It has poor battery life plus heavy.,,"Battery , Portability "
+Microsoft Surface Laptop 4 boasts a sleek design and impressive display. ,"Design, Display",
+"However, the high price tag might be a drawback for budget-conscious users.",,Price
+"The Dell Inspiron 14 provides excellent performance at an affordable price, but its build quality may not match premium laptops. ","Performance, Price",Build Quality
+"The ASUS Chromebook Flip C436 combines sleek design with the flexibility of a 2-in-1, though its reliance on Chrome OS might limit software compatibility for some users.","Design, Connectivity",OS
+The Acer Aspire 5 provides excellent value with its affordable price and reliable performance. ,"Price, Performance, Reliability",
+"However, its bulky build might not suit users looking for a more portable option. ",,Portability
+"The Razer Blade 15 is a powerhouse for gaming and creative work, but its high price and relatively short battery life might be drawbacks for some users. ","Price, Performance",Battery
+"The Lenovo Legion 5 is a budget-friendly gaming laptop with solid performance, although its bulky design may not be ideal for on-the-go gaming. ","Price, Performance",Portability
+"The HP Spectre x360 impresses with its sleek design, powerful performance, and versatile 2-in-1 functionality. ","Design, Performance, Connectivity",
+"However, the premium build comes with a higher price tag. ",,Price
+"Dell Inspiron 15 5000 offers a balance of performance and affordability, making it a reliable choice for everyday tasks. ","Performance, Price, Reliability",
+"However, the plastic build may lack the premium feel some users desire. ",,Build Quality
+The Acer Swift 3 stands out with its lightweight design and solid performance at an affordable price.,"Portability, Design, Performance,Price",
+"However, the display quality may not match premium ultrabooks. ",,Display
+The Microsoft Surface Laptop Go is a compact and budget-friendly option for students and professionals. ,"Size, Price",
+"However, its lower performance may not meet the needs of power users. ",,Performance
+The Lenovo Legion 7i caters to gamers with its high-refresh-rate display and powerful internals. ,"Display, Performance",
+"However, the higher price and weight may be drawbacks for some users. ",,"Price, Portability"
+"MacBook Air M2 continues the tradition of excellent performance and sleek design, but the limited port selection may be a consideration for users with diverse connectivity needs. ","Performance, Design",Connectivity
+The ASUS VivoBook S14 offers a stylish design and decent performance at an affordable price.,"Design, Performance, Price",
+" However, the build quality may not match premium ultrabooks. ",,Build Quality
+"The LG Gram 17 stands out with its lightweight design and large display, but its premium price may not align with the budget-conscious consumer. ","Portability,Design, Size",Price
+The MSI GS66 Stealth appeals to gamers with its powerful hardware and sleek design. ,"Performance,Design",
+"However, the higher price may be a barrier for some budget-conscious users. ",,Price
+The Razer Book 13 combines a sleek design with high-end performance. ,"Design, Performance",
+"Still, the premium features come at a higher price point, making it more suitable for professionals.",,Price
