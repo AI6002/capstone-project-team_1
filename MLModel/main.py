@@ -1,24 +1,32 @@
 import asyncio
 import torch
-import sys
-from preprocessing import Preprocess
-from aspect_mapping import map_reviews_to_synonyms
-from feature_sentiment_analysis import analyze_feature_sentiments
-from PyABSA.extract_aspects import extract_aspects_from_file
+import sys, os
+
+# Navigate to the root directory by going up one level (../)
+root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+# Add the root directory to the Python path
+sys.path.append(root_dir)
+from MLModel.preprocessing import Preprocess
+from MLModel.aspect_mapping import map_reviews_to_synonyms
+from MLModel.feature_sentiment_analysis import analyze_feature_sentiments
+from MLModel.PyABSA.extract_aspects import extract_aspects_from_file
+from evaluation import map_and_evaluate
 
 
-async def review_analysis(input_file_path, output_file_path):
+async def review_analysis(input_file_path, evaluation_file_path):
     """
     Analyze the opinions toward the product based on a DataFrame of reviews.
 
     Args:
         input_file_path (str): Path to the input file containing reviews.
-        output_file_path (str): Path to the output file for processed reviews.
     """
 
+    # Path to the output file for processed reviews
+    output_file_path = "./MLModel/data/review_sentences.txt"
+    category = ""
     prep = Preprocess()
     try:
-        prep.extract_sentences(input_file_path, output_file_path)
+        category = prep.extract_sentences(input_file_path, output_file_path)
     except FileNotFoundError as e:
         print(f"Error: {e}. The input file does not exist.")
         sys.exit(1)
@@ -36,8 +44,8 @@ async def review_analysis(input_file_path, output_file_path):
 
     # TODO: Resolve the memory issue to work with output_file_path
     # Call the function from the aspect_extraction module
-    file_path = "./MLModel/data/sample_scraped_data_linebyline.txt"
-    reviews = extract_aspects_from_file(file_path)
+    # file_path = "./MLModel/data/sample_scraped_data_linebyline.txt"
+    reviews = extract_aspects_from_file(output_file_path)
 
     # Clear GPU memory
     torch.cuda.empty_cache()
@@ -45,6 +53,11 @@ async def review_analysis(input_file_path, output_file_path):
     # TODO: Get the type of the product and pass it to the aspect mapping function
     # Call the function from the aspect_mapping module
     mapped_reviews = map_reviews_to_synonyms(reviews, "laptop")
+
+    # Concatenate rows of the evaluation data and get the result as a DataFrame
+    concatenated_data = prep.concat_rows_by_length(input_csv_path=evaluation_file_path, max_length=512)
+    # Evaluation
+    map_and_evaluate(mapped_reviews, concatenated_data)
 
     # Now you can work with the mapped_reviews
     print(mapped_reviews)
@@ -54,12 +67,15 @@ async def review_analysis(input_file_path, output_file_path):
 
     print(best_and_worst_features)
 
+    return best_and_worst_features
 
-async def main():
-    input_file_path = './MLModel/data/scraped_data.txt'
-    output_file_path = './MLModel/data/review_sentences.txt'
-    await review_analysis(input_file_path, output_file_path)
+
+async def sentiment_analysis(input_file_path, evaluation_file_path):
+    return await review_analysis(input_file_path, evaluation_file_path)
+
 
 if __name__ == "__main__":
     loop = asyncio.get_event_loop()
-    loop.run_until_complete(main())
+    input_file_path = './MLModel/data/scraped_data.txt'
+    evaluation_file_path = './Data/Evaluation/Evaluation_data_laptop.csv'
+    loop.run_until_complete(sentiment_analysis(input_file_path, evaluation_file_path))
