@@ -10,8 +10,16 @@ from MLModel.preprocessing import Preprocess
 from MLModel.aspect_mapping import map_reviews_to_synonyms
 from MLModel.feature_sentiment_analysis import analyze_feature_sentiments
 from MLModel.PyABSA.extract_aspects import extract_aspects_from_file
-from evaluation import map_and_evaluate
 
+# Navigate to the root directory by going up one level (../)
+root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+# Add the root directory to the Python path
+sys.path.append(root_dir)
+from MLModel.preprocessing import Preprocess
+from MLModel.aspect_mapping import map_reviews_to_synonyms
+from MLModel.feature_sentiment_analysis import analyze_feature_sentiments
+from MLModel.PyABSA.extract_aspects import extract_aspects_from_file
+from evaluation import map_and_evaluate
 
 async def review_analysis(input_file_path, evaluation_file_path):
     """
@@ -27,6 +35,7 @@ async def review_analysis(input_file_path, evaluation_file_path):
     prep = Preprocess()
     try:
         category = prep.extract_sentences(input_file_path, output_file_path)
+
     except FileNotFoundError as e:
         print(f"Error: {e}. The input file does not exist.")
         sys.exit(1)
@@ -41,8 +50,7 @@ async def review_analysis(input_file_path, evaluation_file_path):
     if not reviews:
         print("No reviews were loaded. Exiting the program.")
         sys.exit(0)
-
-    # TODO: Resolve the memory issue to work with output_file_path
+        
     # Call the function from the aspect_extraction module
     # file_path = "./MLModel/data/sample_scraped_data_linebyline.txt"
     reviews = extract_aspects_from_file(output_file_path)
@@ -66,13 +74,14 @@ async def review_analysis(input_file_path, evaluation_file_path):
     best_and_worst_features = analyze_feature_sentiments(mapped_reviews)
 
     print(best_and_worst_features)
+    
+    return best_and_worst_features
 
     return best_and_worst_features
 
 
 async def sentiment_analysis(input_file_path, evaluation_file_path):
     return await review_analysis(input_file_path, evaluation_file_path)
-
 
 if __name__ == "__main__":
     loop = asyncio.get_event_loop()
