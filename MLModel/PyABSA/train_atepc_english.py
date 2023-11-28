@@ -33,7 +33,8 @@ config.learning_rate = 1e-5
 multilingual = ABSADatasetList.English
 config.pretrained_bert = "yangheng/deberta-v3-base-absa-v1.1"
 #Dataset = '100.electronics'
-Dataset = DatasetItem("600.electronics600", ["113.laptop14","100.electronics"])
+#Dataset = DatasetItem("600.electronics600", ["113.laptop14","100.electronics"])
+Dataset = DatasetItem("600.electronics", ["113.laptop14","600.electronics600"])
 checkpoint_path = ATEPCCheckpointManager.get_checkpoint(checkpoint='english')
 aspect_extractor = ATEPCTrainer(
     config=config,
