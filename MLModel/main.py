@@ -50,7 +50,10 @@ async def review_analysis(input_file_path):
 
     # TODO: Get the type of the product and pass it to the aspect mapping function
     # Call the function from the aspect_mapping module
-    mapped_reviews = map_reviews_to_synonyms(reviews, "laptop")
+    print("Found category: ", category)
+    print(reviews)
+    mapped_reviews = map_reviews_to_synonyms(reviews, category)
+    print("#############################################################################################################")
 
     # Now you can work with the mapped_reviews
     print(mapped_reviews)

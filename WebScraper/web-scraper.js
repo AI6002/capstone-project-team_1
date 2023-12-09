@@ -3,9 +3,9 @@
 //node web-scraper.js <testurl> <outputFilePath>
 const puppeteer = require('puppeteer');
 const fs = require('fs'); // Import the file system module
-const getCategory = require(__dirname+'/get-category.js');
+const getCategory = require(__dirname + '/get-category.js');
 const categoriesFilePath = 'MLModel/data/categories.txt';
-const numOfReviews = 10;
+const numOfReviews = 3;
 let reviewCount = 2;
 (async () => {
 
@@ -80,7 +80,8 @@ let reviewCount = 2;
       const nextButtonEnabled = await pagination.$('li.a-last:not(.a-disabled) a');
       if (nextButtonEnabled) {
         await nextButtonEnabled.click();
-        await page.waitForTimeout(2000);
+        await new Promise(resolve => setTimeout(resolve, 2000));
+        //await page.waitForTimeout(2000);
         console.log('Clicked on next page ' + reviewCount);
         reviewCount++;
         await scrapePage(); // Recursively scrape the next page
@@ -114,7 +115,7 @@ let reviewCount = 2;
 
         catText += text + ' '; // Concatenate text from each td
       }
-      
+
       // Perform getCategory operation outside of page.$$eval
       const result = await getCategory.getCategory(categoriesFilePath, catText.trim());
 
@@ -137,12 +138,18 @@ let reviewCount = 2;
   if (seeAllReviewsLink) {
     await seeAllReviewsLink.click();
     //await page.waitForNavigation();
-    await page.waitForTimeout(5000);
+    await new Promise(resolve => setTimeout(resolve, 2000));
+    //await page.waitForTimeout(5000);
   } else {
     console.error('See all reviews link not found');
     browser.close();
     return;
   }
+
+  // Select "Most Recent" from the dropdown
+  await page.select('#sort-order-dropdown', 'recent');
+  await new Promise(resolve => setTimeout(resolve, 2000));
+  //await page.waitForTimeout(2000); // Wait for the page to update after changing the sort order
 
   // Start scraping
   await scrapePage();
