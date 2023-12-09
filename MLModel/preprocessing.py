@@ -77,6 +77,68 @@ class Preprocess():
         
         return category
 
+    def concat_rows_by_length(self, input_csv_path, max_length=512):
+        """
+        Concatenate rows in a CSV file based on the length of the review sentences.
+
+        Args:
+            input_csv_path (str): Path to the input CSV file.
+            max_length (int): Maximum length for concatenation.
+
+        Returns:
+            pd.DataFrame: Concatenated data as a Pandas DataFrame.
+        """
+        # Read the input CSV file
+        data = pd.read_csv(input_csv_path)
+
+        # Initialize variables for concatenated rows
+        concatenated_reviews = []
+        concatenated_positives = []
+        concatenated_negatives = []
+
+        current_review = ""
+        current_positive = []
+        current_negative = []
+
+        # Iterate through each row in the data
+        for index, row in data.iterrows():
+            review = row['Review']
+            positive_aspects = row['Best_Features']
+            negative_aspects = row['Worst_Features']
+
+            # Check if adding the current review exceeds the maximum length
+            if len(current_review) + len(review) > max_length:
+                # Append the current concatenated row
+                concatenated_reviews.append(current_review)
+                concatenated_positives.append(current_positive)
+                concatenated_negatives.append(current_negative)
+
+                # Reset current variables
+                current_review = review
+                current_positive = []
+                current_negative = []
+            else:
+                # Add the current review to the current concatenated row
+                current_review += review
+
+            # Check for NaN values and replace with an empty list
+            current_positive += [] if pd.isna(positive_aspects) else [aspect.strip() for aspect in positive_aspects.split(',')]
+            current_negative += [] if pd.isna(negative_aspects) else [aspect.strip() for aspect in negative_aspects.split(',')]
+
+        # Append the last concatenated row
+        concatenated_reviews.append(current_review)
+        concatenated_positives.append(current_positive)
+        concatenated_negatives.append(current_negative)
+
+        # Create a new DataFrame with the concatenated data
+        concatenated_data = pd.DataFrame({
+            'Review': concatenated_reviews,
+            'Positive_Aspects': concatenated_positives,
+            'Negative_Aspects': concatenated_negatives
+        })
+
+        return concatenated_data
+
     def demojize(self, text):
         try:
             emojis = demoji.findall(text)
