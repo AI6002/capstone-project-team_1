@@ -19,9 +19,9 @@ from MLModel.preprocessing import Preprocess
 from MLModel.aspect_mapping import map_reviews_to_synonyms
 from MLModel.feature_sentiment_analysis import analyze_feature_sentiments
 from MLModel.PyABSA.extract_aspects import extract_aspects_from_file
-from evaluation import map_and_evaluate
+from MLModel.evaluation import map_and_evaluate
 
-async def review_analysis(input_file_path, evaluation_file_path):
+async def review_analysis(input_file_path):
     """
     Analyze the opinions toward the product based on a DataFrame of reviews.
 
@@ -68,11 +68,6 @@ async def review_analysis(input_file_path, evaluation_file_path):
     # Now you can work with the mapped_reviews
     print(mapped_reviews)
 
-    # Concatenate rows of the evaluation data and get the result as a DataFrame
-    concatenated_data = prep.concat_rows_by_length(input_csv_path=evaluation_file_path, max_length=512)
-    # Evaluation
-    map_and_evaluate(mapped_reviews, concatenated_data)
-
     # Assuming you have already defined 'mapped_reviews' using the 'map_reviews_to_synonyms' function
     best_and_worst_features = analyze_feature_sentiments(mapped_reviews)
 
@@ -83,11 +78,10 @@ async def review_analysis(input_file_path, evaluation_file_path):
     return best_and_worst_features
 
 
-async def sentiment_analysis(input_file_path, evaluation_file_path):
-    return await review_analysis(input_file_path, evaluation_file_path)
+async def sentiment_analysis(input_file_path):
+    return await review_analysis(input_file_path)
 
 if __name__ == "__main__":
     loop = asyncio.get_event_loop()
     input_file_path = './MLModel/data/scraped_data.txt'
-    evaluation_file_path = './Data/Evaluation/Evaluation_data_laptop.csv'
-    loop.run_until_complete(sentiment_analysis(input_file_path, evaluation_file_path))
+    loop.run_until_complete(sentiment_analysis(input_file_path))
