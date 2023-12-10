@@ -450,7 +450,8 @@ def map_reviews_to_synonyms(reviews, product_type):
     elif product_type == "headphone":
         synonym_words = headphone_synonym_words
     else:
-        raise ValueError("Invalid product type")
+        synonym_words = laptop_synonym_words
+        #raise ValueError("Invalid product type")
 
     word_trie = Trie()
     for word, mapping in synonym_words:

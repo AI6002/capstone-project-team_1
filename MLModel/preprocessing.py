@@ -35,7 +35,7 @@ class Preprocess():
         # Download the punkt tokenizer data if it hasn't already
         nltk.download('punkt')
 
-        max_line_length = 512
+        max_line_length = 128
 
         # Open the input and output files
         with open(input_file_path, 'r', encoding='utf-8') as input_file, open(output_file_path, 'w',
