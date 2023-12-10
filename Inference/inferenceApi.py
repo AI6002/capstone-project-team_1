@@ -15,6 +15,12 @@ from MLModel.main import sentiment_analysis
 
 class Data(BaseModel):
     url: str
+    
+class Feedback(BaseModel):
+    productUrl: str
+    satisfaction: int
+    feedback: str
+    responseTime: float
 
 app = FastAPI()
 # Add CORS middleware to allow all origins
@@ -38,12 +44,39 @@ async def analyze(data: Data):
         
         print("Scraping completed successfully.")
         print("Analyzing the scraped data...")
-        # Extract sentences from the scraped data
-        #await extract_sentences()
     
         return await sentiment_analysis(scraped_data_path)
+       
     except Exception as e:
         return "An error occurred: "+str(e)
+  
+async def save_feedback_to_csv(feedback: Feedback):
+    import csv
+    filename = "feedback.csv"
+    fieldnames = ["Name", "Value"]
+
+    with open(filename, mode="a", newline="", encoding="utf-8") as file:
+        writer = csv.DictWriter(file, fieldnames=fieldnames)
+
+        # Check if the file is empty and write headers if needed
+        if file.tell() == 0:
+            writer.writeheader()
+
+        # Write feedback data to CSV
+        writer.writerow({"Name": "Product URL", "Value": feedback.productUrl})
+        writer.writerow({"Name": "Satisfaction", "Value": feedback.satisfaction})
+        writer.writerow({"Name": "Feedback", "Value": feedback.feedback})
+        writer.writerow({"Name": "ResponseTime", "Value": feedback.responseTime})
+        writer.writerow({})  # Add an empty row to separate entries
+  
+@app.post("/feedback/")
+async def feedback(feedback: Feedback):
+    try:
+        await save_feedback_to_csv(feedback)
+        return "Feedback saved successfully!"
+
+    except Exception as e:
+        return f"An error occurred: {str(e)}"
     
     
 
@@ -59,10 +92,6 @@ async def scrape(url: str):
         return {"success": True}
     else:
         return {"error": f"Node.js script execution failed with error: {stderr.decode()}"} 
-
-# async def extract_sentences():
-#     prep=Preprocess()
-#     prep.extract_sentences("WebScraper/scraped_data.txt", "MLModel/data/scraped_data.txt")  
 
 if __name__ == "__main__":
     uvicorn.run('inferenceApi:app', host='0.0.0.0', port=5000)

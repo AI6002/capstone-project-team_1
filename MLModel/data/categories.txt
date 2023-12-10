@@ -7,5 +7,5 @@ phone
 Brand Model Name Style Color Screen Size Special Feature Target Audience Age Range (Description) Compatible Devices Band Material Type
 smartwatch
 Brand Model Name Memory Storage Capacity Screen Size Display Resolution Maximum
-tablet
+laptop
 

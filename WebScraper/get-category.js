@@ -10,7 +10,7 @@ async function getCategory(filePath, searchString) {
     let isPreviousLineMatched = false;
     let result = 'Not supported category. Please add it to categories.txt file.';
     let searchWords = searchString.toLowerCase().split(' ');
-    const splitCount = 8;
+    const splitCount = 6;
     if (searchWords.length < splitCount)
       return result;
 
