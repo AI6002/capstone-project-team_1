@@ -44,8 +44,6 @@ async def analyze(data: Data):
         
         print("Scraping completed successfully.")
         print("Analyzing the scraped data...")
-        # Extract sentences from the scraped data
-        #await extract_sentences()
     
         return await sentiment_analysis(scraped_data_path)
        
@@ -94,10 +92,6 @@ async def scrape(url: str):
         return {"success": True}
     else:
         return {"error": f"Node.js script execution failed with error: {stderr.decode()}"} 
-
-# async def extract_sentences():
-#     prep=Preprocess()
-#     prep.extract_sentences("WebScraper/scraped_data.txt", "MLModel/data/scraped_data.txt")  
 
 if __name__ == "__main__":
     uvicorn.run('inferenceApi:app', host='0.0.0.0', port=5000)
