@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
       
       document.getElementById("best-feature").textContent =productUrl
       // Make a POST request to the web API
-      fetch("http://127.0.0.1:5000/analyze", {
+      fetch("http://vahidkh.me:5000/analyze", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
