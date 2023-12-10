@@ -13,6 +13,7 @@ COPY requirements.txt .
 COPY ./Inference/inferenceApi.py .
 COPY ./MLModel/preprocessing.py ./MLModel/
 COPY ./MLModel/aspect_mapping.py ./MLModel/
+COPY ./MLModel/evaluation.py ./MLModel/
 COPY ./MLModel/main.py ./MLModel/
 COPY ./MLModel/data/categories.txt ./MLModel/data/
 COPY ./MLModel/feature_sentiment_analysis.py ./MLModel/
