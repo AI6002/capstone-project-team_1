@@ -29,6 +29,24 @@
       <strong style="vertical-align: middle;">Worst Feature:</strong> 
       <span id="worst-feature" style="vertical-align: middle;"></span>
     </p>
+    <br>
+    <div id="thank-you-message" style="display: none; text-align: center;">
+      <p>Thank you for your feedback!</p>
+    </div>
+    <div id="feedback-form" style="display: none; ">
+      <textarea id="feedback-textarea" placeholder="Provide your feedback" style="width: 100%; height: 50px;"></textarea>
+      <div style="margin-top: 10px;">
+        <label for="satisfaction-stars" style="margin-right: 10px;">Satisfaction Level:</label>
+        <select id="satisfaction-stars" style="width: 60px;">
+          <option value="1">1 star</option>
+          <option value="2">2 stars</option>
+          <option value="3">3 stars</option>
+          <option value="4">4 stars</option>
+          <option value="5">5 stars</option>
+        </select>
+      </div>
+      <button id="submit-feedback" style="margin-top: 10px;text-align: center;">Submit Feedback</button>
+    </div>    
   </div>
   <div id="loading-indicator" style="display: none;">
     <img src="icons/loading.gif" alt="Loading..." class="loading-image" >
